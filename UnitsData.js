@@ -5325,7 +5325,7 @@ const UnitsData = {
       "G-3 Gundam"
     ],
     "stage":{
-      "Mobile Suit Gundam": [ "5" ]
+      "Mobile Suit Gundam": [ "1" ]
     },
     "code": [
       "03-7799496"
