@@ -1,10 +1,5 @@
-let result_tree = {};
-
-function searchEvent( event )
-{
-    event.preventDefault();
-    searchUnit();
-}
+let ResultTree = {};
+let ResetScrollPosition = false;
 
 function resolv_ref( unit )
 {
@@ -16,6 +11,11 @@ function resolv_ref( unit )
     for( const unitname of refs ){
         const merge_unit = UnitsData[unitname];
 
+        if( ! merge_unit ){
+            console.log( "INVALID UNIT REFERENCE: " + unitname );
+            continue;
+        }
+        
         for( const key in merge_unit ){
             if( key === "stage" ){
                 if( ! Object.hasOwn( unit, key ) ) unit[key] = {};
@@ -62,8 +62,8 @@ function _a( element, key )
 {
     const a = document.createElement( "a" );
     a.textContent = _t(key);
-
-    if( key.at( 0 ) != '[' ) a.href = "#" + encodeURIComponent( key );
+    a.href = "#" + encodeURIComponent( key );
+    a.addEventListener( "click", ( e ) => { ResetScrollPosition = true; } );
 
     element.appendChild( a );
 }
@@ -75,16 +75,13 @@ function _t( str )
 
 function normalize( str )
 {
-    return str.normalize("NFKC").toLowerCase().replace(/[\s\-_・]/g, "");
+    return str.normalize( "NFKC" ).toLowerCase().replace( /[\s\-_・]/g, "" );
 }
 
-function searchUnit( str )
+function search_unit( str )
 {
     const name = str;
-    const result = document.getElementById("ggf-unit-search-result");
     let match = null;
-
-    result.replaceChildren();
 
     if( ! str ) return;
 
@@ -95,14 +92,19 @@ function searchUnit( str )
 
     let e;
 
-    if ( ! units.length ) {
+    /*if ( match === null ) {
         const e = document.createElement( "p" );
         e.textContent = "見つかりませんでした。";
         result.appendChild( e );
-        return;
+    }*/
+
+    units.sort( ( a, b ) => _t( a ).localeCompare( _t( b ), "ja" ) );
+
+    if( ! match ){
+        if( ! units.length ) return false;
+        match = units[0];
     }
 
-    if( ! match ) match = units[0];
     const unit = {
         name: match,
         data: UnitsData[match]
@@ -110,37 +112,50 @@ function searchUnit( str )
 
     resolv_ref( unit.data );
 
-    result_tree["match"].replaceChildren();
+    ResultTree["match"].replaceChildren();
     for( const item of units ){
-        result_tree["match"].appendChild( ( e = document.createElement( "li") ) );
+        if( item == match ) continue;
+        ResultTree["match"].appendChild( ( e = document.createElement( "li") ) );
         _a( e, _t(item) );
     }
 
-    result_tree["unitname"].textContent = _t(unit.name);
+    ResultTree["unitname"].textContent = _t(unit.name);
 
-    result_tree["design"].replaceChildren();
-    if( Object.hasOwn( unit.data, "design" ) ){
+    ResultTree["design"].replaceChildren();
+    if( Object.hasOwn( unit.data, "design" ) && unit.data.design.length ){
         for( const design of unit.data.design ){
-            result_tree["design"].appendChild( ( e = document.createElement( "ul" ) ) );
-            e.appendChild( document.createElement( "li" ) );
-            e.appendChild( document.createElement( "li" ) );
-            _a( e.firstChild, _t(design[0]) );
-            _a( e.lastChild, _t(design[1]) );
-        }
-    }
-
-    result_tree["dev-to"].replaceChildren();
-    if( Object.hasOwn( unit.data, "development" ) ){
-        for( const development of unit.data.development ){
-            result_tree["dev-to"].appendChild( ( e = document.createElement( "li" ) ) );
-            _a( e, _t(development) );
+            ResultTree["design"].appendChild( ( e = document.createElement( "ul" ) ) );
+            for( const material of design ){
+                e.appendChild( document.createElement( "li" ) );
+                if( Array.isArray( material ) ){
+                    const mls = document.createElement( "ul" )
+                    for( const _m of material ){
+                        mls.appendChild( document.createElement( "li" ) );
+                        _a( mls.lastChild, _t(_m) );
+                    }
+                    e.lastChild.appendChild( mls );
+                } else{
+                    _a( e.lastChild, _t(material) );
+                }
+            }
         }
     } else{
-        result_tree["dev-to"].appendChild( ( e = document.createElement( "li" ) ) );
+        ResultTree["design"].appendChild( ( e = document.createElement( "p" ) ) );
         e.textContent = "なし";
     }
 
-    result_tree["dev-from"].replaceChildren();
+    ResultTree["dev-to"].replaceChildren();
+    if( Object.hasOwn( unit.data, "development" ) && unit.data.development.length ){
+        for( const development of unit.data.development ){
+            ResultTree["dev-to"].appendChild( ( e = document.createElement( "li" ) ) );
+            _a( e, _t(development) );
+        }
+    } else{
+        ResultTree["dev-to"].appendChild( ( e = document.createElement( "li" ) ) );
+        e.textContent = "なし";
+    }
+
+    ResultTree["dev-from"].replaceChildren();
     {
         const dev_from = Object.keys( UnitsData ).filter( key => {
             if( Object.hasOwn( UnitsData[key], "development" ) ){
@@ -153,118 +168,181 @@ function searchUnit( str )
 
         if( dev_from.length ){
             for( const src_unit of dev_from ){
-                result_tree["dev-from"].appendChild( ( e = document.createElement( "li" ) ) );
+                ResultTree["dev-from"].appendChild( ( e = document.createElement( "li" ) ) );
                 _a( e, _t(src_unit) );
             }
         } else{
-            result_tree["dev-from"].appendChild( ( e = document.createElement( "li" ) ) );
+            ResultTree["dev-from"].appendChild( ( e = document.createElement( "li" ) ) );
             e.textContent = "なし";
         }
     }
 
-    result_tree["stage"].replaceChildren();
+    ResultTree["stage"].replaceChildren();
     if( Object.hasOwn( unit.data, "stage" ) ){
         for( const stage in unit.data.stage ){
-            result_tree["stage"].appendChild( ( e = document.createElement( "li" ) ) );
+            ResultTree["stage"].appendChild( ( e = document.createElement( "li" ) ) );
             e.textContent = _t(stage) + " Stage " + unit.data.stage[stage].join( ", " );
         }
     } else{
-        result_tree["stage"].appendChild( ( e = document.createElement( "li" ) ) );
+        ResultTree["stage"].appendChild( ( e = document.createElement( "li" ) ) );
         e.textContent = "なし";
     }
 
-    result_tree["note"].replaceChildren();
-    if( Object.hasOwn( unit.data, "note" ) ){
+    ResultTree["note"].replaceChildren();
+    if( Object.hasOwn( unit.data, "note" ) && unit.data.note.length ){
         for( const note of unit.data.note ){
-            result_tree["note"].appendChild( ( e = document.createElement( "li" ) ) );
+            ResultTree["note"].appendChild( ( e = document.createElement( "li" ) ) );
             e.textContent = _t(note);
         }
     } else{
-        result_tree["note"].appendChild( ( e = document.createElement( "li" ) ) );
+        ResultTree["note"].appendChild( ( e = document.createElement( "li" ) ) );
         e.textContent = "なし";
     }
 
-    result_tree["code"].replaceChildren();
-    if( Object.hasOwn( unit.data, "code" ) ){
+    ResultTree["code"].replaceChildren();
+    if( Object.hasOwn( unit.data, "code" ) && unit.data.code.length ){
         for( const code of unit.data.code ){
-            result_tree["code"].appendChild( ( e = document.createElement( "li" ) ) );
+            ResultTree["code"].appendChild( ( e = document.createElement( "li" ) ) );
             e.textContent = code;
         }
     } else{
-        result_tree["code"].appendChild( ( e = document.createElement( "li" ) ) );
+        ResultTree["code"].appendChild( ( e = document.createElement( "li" ) ) );
         e.textContent = "なし";
     }
 
-    result.appendChild( result_tree["main"] );
+    return true;
 }
 
 function ev_loadhash( e )
 {
-    const hash = decodeURIComponent( location.hash.slice( 1 ) );
+    const result = document.getElementById( "ggf-unit-db-result" );
+    const hash   = decodeURIComponent( location.hash.slice( 1 ) );
 
-    document.getElementById("ggf-unit-search-name").value = hash;
-    searchUnit( hash );
+    function add_heading( s, label )
+    {
+        let _h;
+        s.appendChild( ( _h = document.createElement( "h3" ) ) );
+        _h.textContent = label;
+    }
+
+    result.replaceChildren();
+
+    if( ! hash ){
+        result.innerHTML = `<pre>直接入力の難しい文字はカタカナに置き換えられています。
+
+  - νガンダム   → ニューガンダム
+  - HIνガンダム → HIニューガンダム
+  - α・アジール → アルパ・アジール
+  - ∀ガンダム   → ターンエーガンダム
+
+など...</pre>`;
+        return;
+    } else if( hash.charAt( 0 ) === '_' || hash.charAt( 0 ) === '[' ){
+        let label;
+        let e;
+        
+        ResultTree["root-allunits"].replaceChildren();
+        ResultTree["match"].replaceChildren();
+
+        switch( hash ){
+            case "_UNITS":
+                label = "全ユニット一覧";
+                for( const key of Object.keys( UnitsData ).sort( ( a, b ) => _t( a ).localeCompare( _t( b ), "ja" ) ) ){
+                    ResultTree["match"].appendChild( ( e = document.createElement( "li" ) ) );
+                    _a( e, _t(key) )
+                }
+                break;
+            case "_CATEGORIES":
+                label = "カテゴリ一覧";
+                for( const key of Object.keys( Categories ).sort( ( a, b ) => _t( a ).localeCompare( _t( b ), "ja" ) ) ){
+                    ResultTree["match"].appendChild( ( e = document.createElement( "li" ) ) );
+                    _a( e, _t(key) )
+                }
+                break;
+            default:
+                 label = _t(hash);
+
+                const cat = Object.keys( Categories ).find( key => is_match( key, hash, true ) );
+                if( cat ){
+                    for( const key of Categories[cat].sort( ( a, b ) => _t( a ).localeCompare( _t( b ), "ja" ) ) ){
+                        ResultTree["match"].appendChild( ( e = document.createElement( "li" ) ) );
+                        _a( e, _t(key) )
+                    }
+                } else{
+                    ResultTree["match"].appendChild( ( e = document.createElement( "li" ) ) );
+                    e.textContent = "指定されたカテゴリは存在しません。";
+                }
+        }
+
+        add_heading( ResultTree["root-allunits"], label );
+        ResultTree["root-allunits"].appendChild( ResultTree["match"] );
+        result.appendChild( ResultTree["root-allunits"] );
+    } else{
+        ResultTree["root-search"].replaceChildren();
+        document.getElementById("ggf-unit-db-search-name").value = hash;
+
+        search_unit( hash, result );
+
+        ResultTree["root-search"].appendChild( ResultTree["unitname"] );
+        add_heading( ResultTree["root-search"], "設計" );
+        ResultTree["root-search"].appendChild( ResultTree["design"] );
+        add_heading( ResultTree["root-search"], "開発元" );
+        ResultTree["root-search"].appendChild( ResultTree["dev-from"] );
+        add_heading( ResultTree["root-search"], "開発" );
+        ResultTree["root-search"].appendChild( ResultTree["dev-to"] );
+        add_heading( ResultTree["root-search"], "ACE登録/捕獲 ステージ例" );
+        ResultTree["root-search"].appendChild( ResultTree["stage"] );
+        add_heading( ResultTree["root-search"], "備考" );
+        ResultTree["root-search"].appendChild( ResultTree["note"] );
+        add_heading( ResultTree["root-search"], "黒歴史コード" );
+        ResultTree["root-search"].appendChild( ResultTree["code"] );
+        ResultTree["root-search"].appendChild( ResultTree["match"] );
+        result.appendChild( ResultTree["root-search"] );
+    }
 }
 
-result_tree["main"]     = document.createElement( "div" );
-result_tree["unitname"] = document.createElement( "h2" );
-result_tree["design"]   = document.createElement( "div" );
-result_tree["dev-to"]   = document.createElement( "ul" );
-result_tree["dev-from"] = document.createElement( "ul" );
-result_tree["stage"]    = document.createElement( "ul" );
-result_tree["note"]     = document.createElement( "ul" );
-result_tree["code"]     = document.createElement( "ul" );
-result_tree["match"]    = document.createElement( "ul" );
-
-result_tree["unitname"].id = "unitname";
-result_tree["design"].id   = "design";
-result_tree["dev-to"].id   = "development-to";
-result_tree["dev-from"].id = "development-from";
-result_tree["stage"].id    = "stage";
-result_tree["note"].id     = "note";
-result_tree["code"].id     = "code";
-result_tree["match"].id    = "match";
-
+function init_DOM( rt )
 {
-    let e;
-    result_tree["main"].appendChild( result_tree["unitname"] );
+    ResultTree["root-search"]   = document.createElement( "div" );
+    ResultTree["root-allunits"] = document.createElement( "div" );
 
-    result_tree["main"].appendChild( ( e = document.createElement( "h3" ) ) );
-    e.textContent = "設計";
-    result_tree["main"].appendChild( result_tree["design"] );
-    
-    result_tree["main"].appendChild( ( e = document.createElement( "h3" ) ) );
-    e.textContent = "開発元";
-    result_tree["main"].appendChild( result_tree["dev-from"] );
+    ResultTree["unitname"] = document.createElement( "h2" );
+    ResultTree["design"]   = document.createElement( "div" );
+    ResultTree["dev-to"]   = document.createElement( "ul" );
+    ResultTree["dev-from"] = document.createElement( "ul" );
+    ResultTree["stage"]    = document.createElement( "ul" );
+    ResultTree["note"]     = document.createElement( "ul" );
+    ResultTree["code"]     = document.createElement( "ul" );
+    ResultTree["match"]    = document.createElement( "ul" );
 
-    result_tree["main"].appendChild( ( e = document.createElement( "h3" ) ) );
-    e.textContent = "開発";
-    result_tree["main"].appendChild( result_tree["dev-to"] );
-
-    result_tree["main"].appendChild( ( e = document.createElement( "h3" ) ) );
-    e.textContent = "ACE登録/捕獲 ステージ例";
-    result_tree["main"].appendChild( result_tree["stage"] );
-
-    result_tree["main"].appendChild( ( e = document.createElement( "h3" ) ) );
-    e.textContent = "備考";
-    result_tree["main"].appendChild( result_tree["note"] );
-
-    result_tree["main"].appendChild( ( e = document.createElement( "h3" ) ) );
-    e.textContent = "黒歴史コード";
-    result_tree["main"].appendChild( result_tree["code"] );
-    
-    result_tree["main"].appendChild( result_tree["match"] );
+    ResultTree["unitname"].id = "unitname";
+    ResultTree["design"].id   = "design";
+    ResultTree["dev-to"].id   = "development-to";
+    ResultTree["dev-from"].id = "development-from";
+    ResultTree["stage"].id    = "stage";
+    ResultTree["note"].id     = "note";"main"
+    ResultTree["code"].id     = "code";
+    ResultTree["match"].id    = "match";
 }
 
-document.getElementById("ggf-unit-search-form").addEventListener("submit", ( event ) => {
+init_DOM( ResultTree );
+
+document.getElementById( "ggf-unit-db-search" ).addEventListener( "submit", ( event ) => {
     event.preventDefault();
-    
-    const query = document.getElementById("ggf-unit-search-name").value.trim();
+
+    const query = document.getElementById("ggf-unit-db-search-name").value.trim();
 
     if( ! query ) return;
-    location.hash = encodeURIComponent( query );
-});
 
-window.addEventListener("hashchange", ev_loadhash );
+    location.hash = encodeURIComponent( query );
+} );
+
+window.addEventListener("hashchange", ( e ) => {
+    if( ResetScrollPosition ){
+        ResetScrollPosition = false;
+        requestAnimationFrame( () => { window.scrollTo( 0, 0 ); } );
+    }
+    ev_loadhash( e );
+} );
 
 document.addEventListener( "DOMContentLoaded", ev_loadhash );

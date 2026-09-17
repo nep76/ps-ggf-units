@@ -4,24 +4,27 @@
     <meta charset="UTF-8">
     <title>G Generation-F Unit Database</title>
     <link rel="stylesheet" href="main.css">
-    <script src="TransJA.js"></script>
     <script src="UnitsData.js"></script>
+    <script src="Categories.js"></script>
+    <script src="TransJA.js"></script>
     <script src="main.js" defer></script>
 </head>
 <body>
     <header>
-        <h1><a href="#">G Generation-F Unit Database</a></h1>
-        <!--ul>
-            <li><a href="#_Types">[Type]</a></li>
-            <li><a href="#_Codes">黒歴史コード</a></li>
-        </ul-->
-        <form id="ggf-unit-search-form">
-        <input type="text" id="ggf-unit-search-name" placeholder="ユニット名を入力 (部分一致検索 例: ガンダム, ex-sガンダム, ジム など)">
+        <h1><a href="#">G GENERATION-F Unit Database</a></h1>
+        <ul>
+            <li><a href="#_UNITS">全ユニット一覧</a></li>
+            <li><a href="#_CATEGORIES">カテゴリ一覧</a></li>
+            <li><del>戦艦一覧</del></li>
+            <li><del>パイロット一覧</del></li>
+        </ul>
+        <form id="ggf-unit-db-search">
+        <input type="text" id="ggf-unit-db-search-name" placeholder="ユニット名を入力 (部分一致検索 例: ガンダム, ex-sガンダム, ジム など)">
         <button type="submit">検索</button>
         </form>
     </header>
 
-    <main id="ggf-unit-search-result"></main>
+    <main id="ggf-unit-db-result"></main>
 
     <footer>
         <p>連絡先 <a href="https://github.com/nep76/ps-ggf-units">Github: nep76/ps-ggf-units</a></p>
