@@ -554,7 +554,7 @@ const UnitsData = {
       "Gadiru"
     ],
     "stage": {
-      "Mobile New Century Gundam X": [
+      "New Mobile Century Gundam X": [
         "6",
         "7",
         "8"
@@ -1435,7 +1435,7 @@ const UnitsData = {
       "Daughtress Furaiya"
     ],
     "stage": {
-      "Mobile New Century Gundam X": [
+      "New Mobile Century Gundam X": [
         "2",
         "4"
       ]
@@ -1483,7 +1483,7 @@ const UnitsData = {
       "Daughtress Neo"
     ],
     "stage": {
-      "Mobile New Century Gundam X": [
+      "New Mobile Century Gundam X": [
         "5"
       ]
     },
@@ -1907,7 +1907,7 @@ const UnitsData = {
       "Doshito III"
     ],
     "stage": {
-      "Mobile New Century Gundam X": [
+      "New Mobile Century Gundam X": [
         "5"
       ]
     },
@@ -2572,7 +2572,7 @@ const UnitsData = {
     ],
     "development": [],
     "stage": {
-      "Mobile New Century Gundam X": [
+      "New Mobile Century Gundam X": [
         "7"
       ]
     },
@@ -3945,7 +3945,7 @@ const UnitsData = {
       "GW Bit"
     ],
     "stage": {
-      "Mobile New Century Gundam X": [
+      "New Mobile Century Gundam X": [
         "3"
       ]
     },
@@ -4286,7 +4286,7 @@ const UnitsData = {
       "GT Bit"
     ],
     "stage": {
-      "Mobile New Century Gundam X": [
+      "New Mobile Century Gundam X": [
         "4"
       ]
     },
@@ -4516,7 +4516,7 @@ const UnitsData = {
       "GX Bit"
     ],
     "stage": {
-      "Mobile New Century Gundam X": [
+      "New Mobile Century Gundam X": [
         "2"
       ]
     },
@@ -5335,7 +5335,7 @@ const UnitsData = {
     ],
     "development": [],
     "stage": {
-      "Mobile New Century Gundam X": [
+      "New Mobile Century Gundam X": [
         "4"
       ]
     },
@@ -10981,7 +10981,7 @@ const UnitsData = {
   "Doshito III": {
     "development": [],
     "stage": {
-      "Mobile New Century Gundam X": [
+      "New Mobile Century Gundam X": [
         "5"
       ]
     },
@@ -11000,7 +11000,7 @@ const UnitsData = {
   "DHM Faiawarabi": {
     "development": [],
     "stage": {
-      "Mobile New Century Gundam X": [
+      "New Mobile Century Gundam X": [
         "3"
       ]
     },
@@ -11013,7 +11013,7 @@ const UnitsData = {
       "Barient"
     ],
     "stage": {
-      "Mobile New Century Gundam X": [
+      "New Mobile Century Gundam X": [
         "9"
       ]
     },
@@ -11077,7 +11077,7 @@ const UnitsData = {
       "Bairon Kai"
     ],
     "stage": {
-      "Mobile New Century Gundam X": [
+      "New Mobile Century Gundam X": [
         "3"
       ]
     },
@@ -11132,7 +11132,7 @@ const UnitsData = {
       "Dotapu"
     ],
     "stage": {
-      "Mobile New Century Gundam X": [
+      "New Mobile Century Gundam X": [
         "5"
       ]
     },
@@ -11504,7 +11504,7 @@ const UnitsData = {
   },
   "Kurauda": {
     "stage": {
-      "Mobile New Century Gundam X": [
+      "New Mobile Century Gundam X": [
         "8",
         "9"
       ]
