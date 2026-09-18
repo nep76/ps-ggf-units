@@ -33,7 +33,7 @@ const UnitsData = {
       "02-8175845"
     ]
   },
-  "61 Tank": {
+  "61 Tank": {  
     "design": [
       [
         "Phoenix Gundam",
@@ -195,10 +195,7 @@ const UnitsData = {
       ]
     ],
     "development": [
-      "Zaku II Kai",
-      "Hizaku Custom",
-      "Hobi Hizaku",
-      "Marasai"
+      "Zaku II Kai"
     ],
     "code": [
       "03-4768652"
@@ -419,7 +416,8 @@ const UnitsData = {
       ]
     ],
     "development": [
-      "Jenis"
+      "Jenis",
+      "Bairon Kai"
     ],
     "code": [
       "02-2747640"
@@ -1213,7 +1211,6 @@ const UnitsData = {
       ]
     ],
     "development": [
-      "Seiba Fish",
       "Core Booster",
       "G Fighter"
     ],
@@ -1399,8 +1396,7 @@ const UnitsData = {
       ]
     ],
     "development": [
-      "Vigna Zera",
-      "Belga Giros"
+      "Vigna Zera"
     ],
     "code": [
       "07-1140322"
@@ -1487,7 +1483,8 @@ const UnitsData = {
       ]
     ],
     "development": [
-      "Daughtress Neo"
+      "Daughtress Neo",
+      "Barient"
     ],
     "stage": {
       "New Mobile Century Gundam X": [
@@ -1817,7 +1814,8 @@ const UnitsData = {
       ]
     ],
     "development": [
-      "Tropical Dom"
+      "Tropical Dom",
+      "Rick Dom"
     ],
     "stage": {
       "Mobile Suit Gundam Gaiden The Blue Destiny": [
@@ -2238,9 +2236,7 @@ const UnitsData = {
         "Baiaran"
       ]
     ],
-    "development": [
-      "Ez8 HAC"
-    ],
+    "development": [],
     "code": [
       "03-7379729"
     ]
@@ -2513,9 +2509,7 @@ const UnitsData = {
       ]
     ],
     "development": [
-      "Gundam NT1",
-      "GM",
-      "Heavy Gundam"
+      "Gundam NT1"
     ],
     "code": [
       "03-7190600"
@@ -2572,7 +2566,7 @@ const UnitsData = {
   "Gabusurei": {
     "development": [
       "Hanburabi",
-      "Gyaburan Kai"
+      "Gyaburan"
     ],
     "code": [
       "05-6411874"
@@ -2772,7 +2766,8 @@ const UnitsData = {
       ]
     ],
     "development": [
-      "Gaza C Kai"
+      "Gaza C Kai",
+      "Gaza D"
     ],
     "stage": {
       "Mobile Suit Z Gundam": [
@@ -2791,9 +2786,7 @@ const UnitsData = {
         "Shining Gundam"
       ]
     ],
-    "development": [
-      "Gaza D"
-    ],
+    "development": [],
     "code": [
       "02-3400635"
     ]
@@ -2859,9 +2852,7 @@ const UnitsData = {
         "Gelgog Cannon"
       ]
     ],
-    "development": [
-      "Jegan"
-    ],
+    "development": [],
     "code": [
       "03-4079439"
     ]
@@ -2878,7 +2869,8 @@ const UnitsData = {
       ]
     ],
     "development": [
-      "GD Cannon"
+      "GD Cannon",
+      "Jegan"
     ],
     "code": [
       "03-1927001"
@@ -3171,7 +3163,10 @@ const UnitsData = {
       ]
     ],
     "development": [
-      "GM Commando"
+      "GM Commando",
+      "GM Lightarmor",
+      "GM Trainer",
+      "Desert GM"
     ],
     "code": [
       "01-6775363"
@@ -3190,7 +3185,8 @@ const UnitsData = {
       ]
     ],
     "development": [
-      "GM III"
+      "GM III",
+      "Nemo"
     ],
     "code": [
       "02-6867186"
@@ -3242,8 +3238,7 @@ const UnitsData = {
       ]
     ],
     "development": [
-      "GM Quail",
-      "Powered GM"
+      "GM Quail"
     ],
     "code": [
       "02-5649898"
@@ -3273,7 +3268,7 @@ const UnitsData = {
     ],
     "development": [
       "GM Custom",
-      "Cold Land use GM"
+      "Powered GM"
     ],
     "stage": {
       "Mobile Suit Gundam 0083 Stardust Memory": [
@@ -3323,8 +3318,7 @@ const UnitsData = {
       ]
     ],
     "development": [
-      "GM Sniper Custom",
-      "Land use Gundam"
+      "GM Sniper Custom"
     ],
     "code": [
       "02-8100059"
@@ -3367,9 +3361,7 @@ const UnitsData = {
       ]
     ],
     "development": [
-      "Zugok",
-      "Higog",
-      "Zaku Marine"
+      "Zugok"
     ],
     "stage": {
       "Mobile Suit Gundam": [
@@ -3438,9 +3430,7 @@ const UnitsData = {
         ]
       ]
     ],
-    "development": [
-      "Rig Ring"
-    ],
+    "development": [],
     "code": [
       "07-0701775"
     ]
@@ -3453,8 +3443,7 @@ const UnitsData = {
       ]
     ],
     "development": [
-      "Memedoza",
-      "Rig Shacko"
+      "Memedoza"
     ],
     "code": [
       "05-3920261"
@@ -3512,7 +3501,8 @@ const UnitsData = {
       ]
     ],
     "development": [
-      "GP02A"
+      "GP02A",
+      "GP03-S"
     ],
     "stage": {
       "Mobile Fighting Legend G Gundam": [
@@ -3530,9 +3520,7 @@ const UnitsData = {
         "Rigerugu"
       ]
     ],
-    "development": [
-      "GP03-S"
-    ],
+    "development": [],
     "code": [
       "05-0601262"
     ]
@@ -3576,18 +3564,12 @@ const UnitsData = {
     ]
   },
   "Grand Master Gundam": {
-    "design": [
-      [
-        "Master Gundam",
-        [
-          "Gundam Heavens Sword",
-          "Grand Gundam",
-          "Walter Gundam"
-        ]
-      ]
-    ],
+    "design": [],
     "development": [
-      "Walter Gundam"
+      "Walter Gundam",
+      "Gundam Heavens Sword",
+      "Grand Gundam",
+      "Master Gundam"
     ],
     "code": [
       "10-9211171"
@@ -3843,7 +3825,9 @@ const UnitsData = {
       ]
     ],
     "development": [
-      "G-3 Gundam"
+      "G-3 Gundam",
+      "GM",
+      "Heavy Gundam"
     ],
     "stage": {
       "Mobile Suit Gundam": [
@@ -4102,7 +4086,8 @@ const UnitsData = {
       ]
     ],
     "development": [
-      "Gundam F91"
+      "Gundam F91",
+      "Cluster Gundam"
     ],
     "code": [
       "08-6464711"
@@ -4116,8 +4101,7 @@ const UnitsData = {
       ]
     ],
     "development": [
-      "Shilhouette Gundam",
-      "Cluster Gundam"
+      "Shilhouette Gundam"
     ],
     "code": [
       "09-1631518"
@@ -4464,7 +4448,8 @@ const UnitsData = {
       ]
     ],
     "development": [
-      "Gunblastor"
+      "Gunblastor",
+      "V Gundam"
     ],
     "code": [
       "05-3712216"
@@ -4488,7 +4473,8 @@ const UnitsData = {
       ]
     ],
     "development": [
-      "Guntank II"
+      "Guntank II",
+      "Mass Product Guntank"
     ],
     "code": [
       "02-8534393"
@@ -4615,8 +4601,7 @@ const UnitsData = {
       ]
     ],
     "development": [
-      "Gira Doga",
-      "Zusan"
+      "Gira Doga"
     ],
     "code": [
       "04-1655128"
@@ -4689,7 +4674,8 @@ const UnitsData = {
       ]
     ],
     "development": [
-      "Gyan Kai"
+      "Gyan Kai",
+      "Gyan Mass Product"
     ],
     "code": [
       "03-3652610"
@@ -4703,8 +4689,7 @@ const UnitsData = {
       ]
     ],
     "development": [
-      "R Jaja",
-      "Gyan Mass Product"
+      "R Jaja"
     ],
     "code": [
       "05-1044074"
@@ -4796,9 +4781,7 @@ const UnitsData = {
     ],
     "development": [
       "Space use High Mobility Zaku",
-      "Zaku II Kai",
-      "Zaku Diver",
-      "Desert Zaku"
+      "Zaku Minelayer"
     ],
     "stage": {
       "Mobile Suit Gundam": [
@@ -4849,7 +4832,10 @@ const UnitsData = {
       ]
     ],
     "development": [
-      "Akuto Zaku"
+      "Akuto Zaku",
+      "Hizaku Custom",
+      "Hobi Hizaku",
+      "Marasai"
     ],
     "stage": {
       "Mobile Suit Z Gundam": [
@@ -4924,7 +4910,9 @@ const UnitsData = {
       ]
     ],
     "development": [
-      "FA Hyaku Shiki Kai"
+      "FA Hyaku Shiki Kai",
+      "Land use Hyaku Shiki Kai",
+      "Mass Product Hyaku Shiki Kai"
     ],
     "code": [
       "07-0128703"
@@ -4988,9 +4976,7 @@ const UnitsData = {
         "Septem"
       ]
     ],
-    "development": [
-      "Rig Shacko (Another use)"
-    ],
+    "development": [],
     "stage": {
       "Mobile Suit V Gundam": [
         "8",
@@ -5094,7 +5080,9 @@ const UnitsData = {
       ]
     ],
     "development": [
-      "Jegan B type"
+      "Jegan B type",
+      "Jegan Kai",
+      "Jegan Heavyarmor"
     ],
     "stage": {
       "Mobile Suit Gundam Char's Counterattack": [
@@ -5150,9 +5138,7 @@ const UnitsData = {
       ]
     ],
     "development": [
-      "Javelin",
-      "Hardygun",
-      "Heavy Gun (Macedonia)"
+      "Javelin"
     ],
     "code": [
       "04-1506195"
@@ -5718,7 +5704,11 @@ const UnitsData = {
         ]
       ]
     ],
-    "development": [],
+    "development": [
+      "High Mobility Leo",
+      "Torogas",
+      "Leo (Space use)"
+    ],
     "stage": {
       "New Mobile Report Gundam W": [
         "3"
@@ -5730,7 +5720,7 @@ const UnitsData = {
   },
   "Leo (Space use)": {
     "development": [
-      "High Mobility Leo"
+      "Taurus"
     ],
     "code": [
       "01-2907061"
@@ -6450,7 +6440,8 @@ const UnitsData = {
       ]
     ],
     "development": [
-      "Nemo III"
+      "Nemo III",
+      "Nero"
     ],
     "code": [
       "02-0270171"
@@ -6684,9 +6675,7 @@ const UnitsData = {
       ]
     ],
     "development": [
-      "Okuto Eipu Kai",
-      "Jurag",
-      "Septem Kai"
+      "Okuto Eipu Kai"
     ],
     "code": [
       "03-2667421"
@@ -6989,7 +6978,8 @@ const UnitsData = {
       ]
     ],
     "development": [
-      "Z Gundam"
+      "Z Gundam",
+      "Metasu"
     ],
     "code": [
       "05-9462450"
@@ -7294,7 +7284,8 @@ const UnitsData = {
       ]
     ],
     "development": [
-      "Shutsurum Dias"
+      "Shutsurum Dias",
+      "Dije"
     ],
     "_ref": [
       "Rick Dias (Black)",
@@ -7465,9 +7456,7 @@ const UnitsData = {
       ]
     ],
     "development": [
-      "Ex-S Gundam",
-      "ZZ Gundam-FA",
-      "Mass Product ZZ Gundam"
+      "Ex-S Gundam"
     ],
     "code": [
       "08-2919622",
@@ -7642,7 +7631,8 @@ const UnitsData = {
       ]
     ],
     "development": [
-      "Gozora"
+      "Gozora",
+      "Rig Shacko"
     ],
     "code": [
       "03-9791268"
@@ -7660,8 +7650,8 @@ const UnitsData = {
     ],
     "development": [
       "Abigoru",
-      "Shacko",
-      "Zolidia"
+      "Contioh",
+      "Jabako"
     ],
     "stage": {
       "Mobile Suit V Gundam": [
@@ -7808,8 +7798,7 @@ const UnitsData = {
     "development": [
       "Tallgeese II",
       "Leo (Space use)",
-      "Leo (Land use)",
-      "Leo (Space use)"
+      "Leo (Land use)"
     ],
     "stage": {
       "New Mobile Report Gundam W": [
@@ -7876,7 +7865,7 @@ const UnitsData = {
     ],
     "development": [
       "Core Fighter",
-      "Don Escargo"
+      "Seiba Fish"
     ],
     "note": [
       "Default factory list"
@@ -8012,8 +8001,7 @@ const UnitsData = {
       ]
     ],
     "development": [
-      "Dom Tropen",
-      "Rick Dom"
+      "Dom Tropen"
     ],
     "code": [
       "02-9145341"
@@ -8054,7 +8042,9 @@ const UnitsData = {
       ]
     ],
     "development": [
-      "Gog"
+      "Gog",
+      "Higog",
+      "Zaku Marine"
     ],
     "code": [
       "01-1495540"
@@ -8391,7 +8381,8 @@ const UnitsData = {
     ],
     "development": [
       "Z Plus A type",
-      "Metasu"
+      "Z Plus C type",
+      "Mass Product Z Gundam"
     ],
     "stage": {
       "Mobile Fighting Legend G Gundam": [
@@ -8411,9 +8402,7 @@ const UnitsData = {
       ]
     ],
     "development": [
-      "Z II",
-      "Z Plus C type",
-      "Mass Product Z Gundam"
+      "Z II"
     ],
     "code": [
       "07-1735208"
@@ -8496,7 +8485,9 @@ const UnitsData = {
       ]
     ],
     "development": [
-      "Zaku II F"
+      "Zaku II F",
+      "Zaku II J",
+      "Bolshanon"
     ],
     "stage": {
       "Mobile Suit Gundam Gaiden The Blue Destiny": [
@@ -8519,8 +8510,7 @@ const UnitsData = {
     ],
     "development": [
       "High Mobility Zaku II",
-      "Zaku II J",
-      "Bolshanon"
+      "Zaku II Kai"
     ],
     "stage": {
       "Mobile Suit Gundam": [
@@ -8547,7 +8537,9 @@ const UnitsData = {
       ]
     ],
     "development": [
-      "High Mobility Operation Unit"
+      "High Mobility Operation Unit",
+      "Zaku Diver",
+      "Desert Zaku"
     ],
     "stage": {
       "Mobile Suit Gundam": [
@@ -9014,7 +9006,9 @@ const UnitsData = {
       ]
     ],
     "development": [
-      "Shaitan"
+      "Shaitan",
+      "Shacko",
+      "Zolidia"
     ],
     "stage": {
       "Mobile Suit V Gundam": [
@@ -9042,10 +9036,7 @@ const UnitsData = {
         ]
       ]
     ],
-    "development": [
-      "Zogok",
-      "Zaku Marina"
-    ],
+    "development": [],
     "code": [
       "03-7346581"
     ]
@@ -9103,7 +9094,8 @@ const UnitsData = {
       ]
     ],
     "development": [
-      "Guza"
+      "Guza",
+      "Zusan"
     ],
     "code": [
       "05-9329316"
@@ -9579,7 +9571,8 @@ const UnitsData = {
   },
   "Fly Mantha": {
     "development": [
-      "TIN Cod"
+      "TIN Cod",
+      "Don Escargo"
     ],
     "note": [
       "Default factory list"
@@ -9643,9 +9636,7 @@ const UnitsData = {
     ]
   },
   "Guntank II": {
-    "development": [
-      "Mass Product Guntank"
-    ],
+    "development": [],
     "stage": {
       "Mobile Suit Z Gundam": [
         "3"
@@ -9705,9 +9696,7 @@ const UnitsData = {
     ]
   },
   "Galbady B": {
-    "development": [
-      "Gyan"
-    ],
+    "development": [],
     "stage": {
       "Mobile Suit Z Gundam": [
         "2",
@@ -9722,7 +9711,8 @@ const UnitsData = {
   },
   "Galbady a": {
     "development": [
-      "Galbady B"
+      "Galbady B",
+      "Gyan"
     ],
     "code": [
       "03-4852006"
@@ -9804,9 +9794,7 @@ const UnitsData = {
     ]
   },
   "Zaku Diver": {
-    "development": [
-      "Zaku II J"
-    ],
+    "development": [],
     "code": [
       "02-4167421"
     ]
@@ -9814,9 +9802,7 @@ const UnitsData = {
   "GM Commando": {
     "development": [
       "GM Kai",
-      "GM Lightarmor",
-      "GM Trainer",
-      "Desert GM"
+      "Cold Land use GM"
     ],
     "code": [
       "02-7462364",
@@ -9825,8 +9811,7 @@ const UnitsData = {
   },
   "GM III": {
     "development": [
-      "Nubel GM III",
-      "Nemo"
+      "Nubel GM III"
     ],
     "code": [
       "02-3510713"
@@ -9836,9 +9821,7 @@ const UnitsData = {
     ]
   },
   "Nemo III": {
-    "development": [
-      "Nero"
-    ],
+    "development": [],
     "code": [
       "04-2428538"
     ]
@@ -9875,7 +9858,8 @@ const UnitsData = {
   },
   "Land use GM": {
     "development": [
-      "GM Sniper"
+      "GM Sniper",
+      "Land use Gundam"
     ],
     "code": [
       "02-1933095"
@@ -9899,16 +9883,15 @@ const UnitsData = {
   },
   "Gouf Flight Experiment": {
     "development": [
-      "Gouf Flight type"
+      "Gouf Flight type",
+      "Dom"
     ],
     "code": [
       "02-3580036"
     ]
   },
   "Gouf Flight type": {
-    "development": [
-      "Dom"
-    ],
+    "development": [],
     "code": [
       "02-5107182"
     ]
@@ -9923,7 +9906,9 @@ const UnitsData = {
   },
   "Rick Dom": {
     "development": [
-      "Dom Gurosubairu"
+      "Dom Gurosubairu",
+      "Dom Bainihitsu",
+      "Rick Dom II"
     ],
     "stage": {
       "Mobile Suit Gundam": [
@@ -9938,10 +9923,7 @@ const UnitsData = {
     ]
   },
   "Dom Gurosubairu": {
-    "development": [
-      "Dom Bainihitsu",
-      "Rick Dom II"
-    ],
+    "development": [],
     "code": [
       "03-9861348"
     ]
@@ -9979,7 +9961,8 @@ const UnitsData = {
   },
   "Ez8": {
     "development": [
-      "Ez8 HMC"
+      "Ez8 HMC",
+      "Ez8 HAC"
     ],
     "stage": {
       "Mobile Suit Gundam The 08th MS Team": [
@@ -9999,7 +9982,6 @@ const UnitsData = {
   "Shutsurum Dias": {
     "development": [
       "Rick Dias II",
-      "Dije"
     ],
     "code": [
       "05-8814763"
@@ -10021,9 +10003,7 @@ const UnitsData = {
     ]
   },
   "FA Gundam Mk III": {
-    "development": [
-      "Gundam Mk IV"
-    ],
+    "development": [],
     "code": [
       "07-9748859"
     ]
@@ -10037,10 +10017,7 @@ const UnitsData = {
     ]
   },
   "FA Hyaku Shiki Kai": {
-    "development": [
-      "Land use Hyaku Shiki Kai",
-      "Mass Product Hyaku Shiki Kai"
-    ],
+    "development": [],
     "code": [
       "08-1766651"
     ]
@@ -10125,7 +10102,9 @@ const UnitsData = {
   },
   "ZZ Gundam": {
     "development": [
-      "S Gundam"
+      "S Gundam",
+      "ZZ Gundam-FA",
+      "Mass Product ZZ Gundam"
     ],
     "code": [
       "09-9860158"
@@ -10168,7 +10147,8 @@ const UnitsData = {
   },
   "Psyco Gundam": {
     "development": [
-      "Psyco Gundam Mk II"
+      "Psyco Gundam Mk II",
+      "Mass Product Psyco Gundam"
     ],
     "code": [
       "10-5320513",
@@ -10177,7 +10157,6 @@ const UnitsData = {
   },
   "Psyco Gundam Mk II": {
     "development": [
-      "Mass Product Psyco Gundam",
       "Psyco Gundam Mk III"
     ],
     "code": [
@@ -10409,13 +10388,16 @@ const UnitsData = {
   },
   "Psyco Doga": {
     "development": [
-      "Jagd Doga (Gyunei type)"
+      "Jagd Doga"
     ],
     "code": [
       "07-7133774"
     ]
   },
   "Jagd Doga": {
+    "development": [
+      "Sazabi"
+    ],
     "_ref": [
       "Jagd Doga (Gyunei type)",
       "Jagd Doga (Quess type)"
@@ -10471,7 +10453,8 @@ const UnitsData = {
   },
   "Zugok": {
     "development": [
-      "Zugok E"
+      "Zugok E",
+      "Zogok"
     ],
     "stage": {
       "Mobile Suit Gundam": [
@@ -10503,7 +10486,8 @@ const UnitsData = {
   },
   "Zaku Marine": {
     "development": [
-      "Zaku Diver"
+      "Zaku Diver",
+      "Zaku Marina"
     ],
     "stage": {
       "Mobile Suit Gundam": [
@@ -10558,9 +10542,7 @@ const UnitsData = {
   },
   "Jegan B type": {
     "development": [
-      "Heavy Gun",
-      "Jegan Kai",
-      "Jegan Heavyarmor"
+      "Heavy Gun"
     ],
     "stage": {
       "Mobile Suit Gundam F91": [
@@ -10573,7 +10555,9 @@ const UnitsData = {
   },
   "Heavy Gun": {
     "development": [
-      "Jemzugan"
+      "Jemzugan",
+      "Hardygun",
+      "Heavy Gun (Macedonia)"
     ],
     "code": [
       "04-5320176"
@@ -10639,9 +10623,7 @@ const UnitsData = {
     ]
   },
   "Gunblastor": {
-    "development": [
-      "V Gundam"
-    ],
+    "development": [],
     "code": [
       "05-9116105"
     ]
@@ -10723,7 +10705,8 @@ const UnitsData = {
       ]
     ],
     "development": [
-      "Dagi Irus"
+      "Dagi Irus",
+      "Belga Giros"
     ],
     "stage": {
       "Mobile Suit Gundam F91": [
@@ -10736,7 +10719,8 @@ const UnitsData = {
   },
   "Belga Giros": {
     "development": [
-      "Vigna Gina"
+      "Vigna Gina",
+      "Belga Barus"
     ],
     "stage": {
       "Mobile Suit Gundam F91": [
@@ -10751,9 +10735,7 @@ const UnitsData = {
     ]
   },
   "Vigna Gina": {
-    "development": [
-      "Belga Barus"
-    ],
+    "development": [],
     "code": [
       "08-5833171"
     ]
@@ -10784,9 +10766,7 @@ const UnitsData = {
   },
   "Abigoru": {
     "development": [
-      "Zaneck",
-      "Contioh",
-      "Jabako"
+      "Zaneck"
     ],
     "stage": {
       "Mobile Suit V Gundam": [
@@ -10806,7 +10786,8 @@ const UnitsData = {
   },
   "Rig Shacko": {
     "development": [
-      "Jabako"
+      "Jabako",
+      "Rig Shacko (Anather use)"
     ],
     "stage": {
       "Mobile Suit V Gundam": [
@@ -10820,7 +10801,8 @@ const UnitsData = {
   },
   "Rig Shacko (Another use)": {
     "development": [
-      "Gotoratan"
+      "Gotoratan",
+      "Rig Ring"
     ],
     "code": [
       "06-3959725"
@@ -10907,7 +10889,10 @@ const UnitsData = {
   },
   "Shuffle Heart": {
     "development": [
-      "Shuffle Club"
+      "Shuffle Club",
+      "Shuffle Joker",
+      "Shuffle Spade",
+      "Shuffle Dia"
     ],
     "code": [
       "07-1936987",
@@ -10916,10 +10901,7 @@ const UnitsData = {
   },
   "Shuffle Club": {
     "development": [
-      "Dragon Gundam",
-      "Shuffle Joker",
-      "Shuffle Spade",
-      "Shuffle Dia"
+      "Dragon Gundam"
     ],
     "code": [
       "07-5411507",
@@ -10954,9 +10936,7 @@ const UnitsData = {
   },
   "High Mobility Leo": {
     "development": [
-      "Aries",
-      "Toragos",
-      "Leo (Space use)"
+      "Aries"
     ],
     "code": [
       "01-7733365"
@@ -11111,9 +11091,7 @@ const UnitsData = {
     ]
   },
   "Daughtress Neo": {
-    "development": [
-      "Barient"
-    ],
+    "development": [],
     "stage": {
       "New Mobile Century Gundam X": [
         "9"
@@ -11189,7 +11167,7 @@ const UnitsData = {
     ],
     "development": [
       "Jenis Kai",
-      "Bairon Kai"
+      "Septem"
     ],
     "stage": {
       "New Mobile Century Gundam X": [
@@ -11201,9 +11179,7 @@ const UnitsData = {
     ]
   },
   "Jenis Kai": {
-    "development": [
-      "Septem"
-    ],
+    "development": [],
     "code": [
       "02-3026274"
     ],
@@ -11215,7 +11191,9 @@ const UnitsData = {
   },
   "Septem": {
     "development": [
-      "Okuto Eipu"
+      "Okuto Eipu",
+      "Jurag",
+      "Septem Kai"
     ],
     "code": [
       "02-9107046"
