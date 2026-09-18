@@ -161,7 +161,7 @@ const UnitsData = {
   "Akushirio": {
     "design": [
       [
-        "Megarider",
+        "Mega Rider",
         [
           "Dibinidado",
           "Nautilus"
@@ -350,7 +350,7 @@ const UnitsData = {
           "Biguro",
           "Biguro Maiyer",
           "Val Valo",
-          "burao buro",
+          "Burao Buro",
           "Elmeth",
           "Ziong",
           "Bigzam",
@@ -360,13 +360,13 @@ const UnitsData = {
         ]
       ],
       [
-        "I [Kusi] Gundam",
+        "I (Kusi) Gundam",
         [
           "Zakurelo",
           "Biguro",
           "Biguro Maiyer",
           "Val Valo",
-          "burao buro",
+          "Burao Buro",
           "Elmeth",
           "Ziong",
           "Bigzam",
@@ -450,17 +450,21 @@ const UnitsData = {
           "Powered GM",
           "GM Sniper",
           "GM Sniper II",
-          "GM sniper Custom",
+          "GM Sniper Custom",
           "GM II",
           "GM Trainer",
           "GM Lightarmor",
           "Desert GM",
-          "Cold Land use GM Nubel GM"
+          "Cold Land use GM",
+          "Nubel GM III"
         ]
       ]
     ],
     "development": [
       "GD Striker"
+    ],
+    "code": [
+      "04-5641276"
     ]
   },
   "Ball": {
@@ -469,7 +473,7 @@ const UnitsData = {
         "Phoenix Gundam",
         [
           "Garikuson",
-          "Rasubet"
+          "Rasuvet"
         ]
       ]
     ],
@@ -497,7 +501,7 @@ const UnitsData = {
           "John Bull Gundam",
           "Dragon Gundam",
           "Bolt Gundam",
-          "Spiegel Gudam",
+          "Gundam Spiegel",
           "Master Gundam",
           "Kowloon Gundam"
         ]
@@ -512,7 +516,7 @@ const UnitsData = {
           "John Bull Gundam",
           "Dragon Gundam",
           "Bolt Gundam",
-          "Spiegel Gudam",
+          "Gundam Spiegel",
           "Master Gundam",
           "Kowloon Gundam"
         ]
@@ -520,7 +524,7 @@ const UnitsData = {
       [
         "Phoenix Gundam",
         [
-          "Fan fan",
+          "Fan Fan",
           "Sumo"
         ]
       ]
@@ -676,7 +680,7 @@ const UnitsData = {
     "design": [
       [
         "[Gaza type]",
-        "[Zeta type]"
+        "[Z Gundam type]"
       ],
       [
         "Phoenix Gundam",
@@ -751,7 +755,7 @@ const UnitsData = {
         ]
       ],
       [
-        "Qubeley k II",
+        "Qubeley Mk II",
         [
           "Jenis",
           "Septem",
@@ -1183,7 +1187,7 @@ const UnitsData = {
         "Tornado Gundam",
         [
           "GM",
-          "Core Booster V"
+          "Core Booster"
         ]
       ],
       [
@@ -1196,6 +1200,9 @@ const UnitsData = {
     ],
     "development": [
       "Waiban"
+    ],
+    "code": [
+      "01-8201975"
     ]
   },
   "Core Fighter": {
@@ -1326,11 +1333,11 @@ const UnitsData = {
       ],
       [
         "Zakutank",
-        "any Gundam"
+        "[Any Gundam]"
       ],
       [
         "Kyatoru",
-        "any Gundam"
+        "[Any Gundam]"
       ],
       [
         "Phoenix Gundam",
@@ -1533,7 +1540,20 @@ const UnitsData = {
         ]
       ],
       [
-        "Daughtress Neo Daughtress Furaiya",
+        "Daughtress Neo",
+        [
+          "61 Tank",
+          "Guntank",
+          "Guntank II",
+          "Gigan",
+          "Mass Product Guntank",
+          "Mazera Attack",
+          "Zakutank",
+          "Armored Car"
+        ]
+      ],
+      [
+        "Daughtress Furaiya",
         [
           "61 Tank",
           "Guntank",
@@ -1579,7 +1599,7 @@ const UnitsData = {
     "design": [
       [
         "Master Gundam",
-        "spiegel Gundam"
+        "Gundam Spiegel"
       ],
       [
         "Phoenix Gundam",
@@ -1709,7 +1729,7 @@ const UnitsData = {
       "01-1648314"
     ]
   },
-  "Dizat Zaku": {
+  "Desert Zaku": {
     "design": [
       [
         "Phoenix Gundam",
@@ -1836,7 +1856,10 @@ const UnitsData = {
     "design": [
       [
         "Phoenix Gundam",
-        "Leos"
+        [
+          "Leo (Land use)",
+          "Leo (Space use)"
+        ]
       ]
     ],
     "development": [],
@@ -1919,13 +1942,16 @@ const UnitsData = {
     "design": [
       [
         [
-          "Any Ball",
+          "[Any Ball]",
           "W Gundam"
         ],
-        "[Gundam X Units]"
+        "[Gundam X type]"
       ]
     ],
-    "development": []
+    "development": [],
+    "code": [
+      "01-6381987"
+    ]
   },
   "Dowaji": {
     "design": [
@@ -2017,7 +2043,7 @@ const UnitsData = {
         "Phoenix Gundam",
         [
           "Gundam NT1",
-          "D.O.M.E Beat",
+          "D.O.M.E. Bit",
           "NT Operation GM Jagura"
         ]
       ]
@@ -2079,7 +2105,7 @@ const UnitsData = {
         ]
       ],
       [
-        "Sebtem Kai",
+        "Septem Kai",
         [
           "Kyatoru",
           "Geze",
@@ -2119,6 +2145,9 @@ const UnitsData = {
           "Proba"
         ]
       ]
+    ],
+    "code": [
+      "03-6768406"
     ]
   },
   "Estarudosu": {
@@ -2128,7 +2157,7 @@ const UnitsData = {
         [
           "Jegan Kai",
           "Tomriat",
-          "Gungurijo"
+          "Kangurijo"
         ]
       ]
     ],
@@ -2150,7 +2179,7 @@ const UnitsData = {
             "Leo (Land use)",
             "Leo (Space use)"
           ],
-          "H. M. Leo"
+          "High Mobility Leo"
         ],
         "[Observer type]"
       ],
@@ -2271,18 +2300,18 @@ const UnitsData = {
           "Noie Ziel II",
           "Queen Mantha",
           "Psyco Doga",
-          "A Aziel",
+          "Alpha Aziel",
           "Guromurin",
           "Mass Product Bigzam",
           "Zodi Ack",
           "Lafressia",
           "Dogora",
           "Birugenau",
-          "Grandzam",
+          "Granzam",
           "Zaku 50",
           "Zodi Ack Mass Product",
           "RF Azam",
-          "Evil Doga",
+          "Ebil Doga",
           "Grantine",
           "Eregorera",
           "Erefante",
@@ -2294,6 +2323,9 @@ const UnitsData = {
     ],
     "development": [
       "Nobushi"
+    ],
+    "code": [
+      "03-9685182"
     ]
   },
   "Feburaru": {
@@ -2304,7 +2336,7 @@ const UnitsData = {
           "Beltigo",
           "Jenis",
           "Septem",
-          "Sebtem Kai",
+          "Septem Kai",
           "Okuto Eipu",
           "Okuto Eipu Kai",
           "Jurag",
@@ -2320,7 +2352,7 @@ const UnitsData = {
           "Beltigo",
           "Jenis",
           "Septem",
-          "Sebtem Kai",
+          "Septem Kai",
           "Okuto Eipu",
           "Okuto Eipu Kai",
           "Jurag",
@@ -2423,6 +2455,9 @@ const UnitsData = {
         "Phoenix Gundam",
         "Dom"
       ]
+    ],
+    "code": [
+      "04-6728963"
     ]
   },
   "G Falcon Burst": {
@@ -2474,7 +2509,7 @@ const UnitsData = {
     "design": [
       [
         "Phoenix Gundam",
-        "D Gundam 3rd"
+        "D Gundam Third"
       ]
     ],
     "development": [
@@ -2800,7 +2835,7 @@ const UnitsData = {
         "Phoenix Gundam",
         [
           "Shaitan",
-          "Geabaze"
+          "Guabaze"
         ]
       ]
     ],
@@ -2970,7 +3005,7 @@ const UnitsData = {
         ]
       ],
       [
-        "Zaku III Last Type",
+        "Zaku III Last type",
         [
           "Qubeley",
           "Qubeley Mk II",
@@ -3079,120 +3114,6 @@ const UnitsData = {
   },
   "Gira Doga": {
     "design": [
-      [
-        "Gira Doga",
-        [
-          "Psycommu(Nu Gundam",
-          "Nu Gundam HWS",
-          "Psycommu High Mobility Zaku",
-          "Burao Buro",
-          "Elmeth",
-          "Qubeley",
-          "Qubeley Mk II",
-          "Queen Mantha",
-          "Mass Product Qubeley",
-          "Prototype Qubeley",
-          "Prototype Psyco Gundam",
-          "Psyco Gundam Mk II",
-          "Jagd Doga",
-          "Sazabi",
-          "Psyco Doga",
-          "Alpha Aziel",
-          "Titania",
-          "Noie Ziel II",
-          "Hi Nu Gundam",
-          "Psycommu Zaku",
-          "Bagi Doga",
-          "Beltigo",
-          "Ebil Doga",
-          "Rig Ring",
-          "Nightingale",
-          "Feburaru",
-          "Psyco Halo",
-          "Zansubain",
-          "Doga",
-          "I (Kusi) Gundam",
-          "Penelope",
-          "Erefante",
-          "Dibinidado)"
-        ]
-      ],
-      [
-        "Gira Doga Kai",
-        [
-          "Psycommu(Nu Gundam",
-          "Nu Gundam HWS",
-          "Psycommu High Mobility Zaku",
-          "Burao Buro",
-          "Elmeth",
-          "Qubeley",
-          "Qubeley Mk II",
-          "Queen Mantha",
-          "Mass Product Qubeley",
-          "Prototype Qubeley",
-          "Prototype Psyco Gundam",
-          "Psyco Gundam Mk II",
-          "Jagd Doga",
-          "Sazabi",
-          "Psyco Doga",
-          "Alpha Aziel",
-          "Titania",
-          "Noie Ziel II",
-          "Hi Nu Gundam",
-          "Psycommu Zaku",
-          "Bagi Doga",
-          "Beltigo",
-          "Ebil Doga",
-          "Rig Ring",
-          "Nightingale",
-          "Feburaru",
-          "Psyco Halo",
-          "Zansubain",
-          "Doga",
-          "I (Kusi) Gundam",
-          "Penelope",
-          "Erefante",
-          "Dibinidado)"
-        ]
-      ],
-      [
-        "Gira Doga Heavyarmor",
-        [
-          "Psycommu(Nu Gundam",
-          "Nu Gundam HWS",
-          "Psycommu High Mobility Zaku",
-          "Burao Buro",
-          "Elmeth",
-          "Qubeley",
-          "Qubeley Mk II",
-          "Queen Mantha",
-          "Mass Product Qubeley",
-          "Prototype Qubeley",
-          "Prototype Psyco Gundam",
-          "Psyco Gundam Mk II",
-          "Jagd Doga",
-          "Sazabi",
-          "Psyco Doga",
-          "Alpha Aziel",
-          "Titania",
-          "Noie Ziel II",
-          "Hi Nu Gundam",
-          "Psycommu Zaku",
-          "Bagi Doga",
-          "Beltigo",
-          "Ebil Doga",
-          "Rig Ring",
-          "Nightingale",
-          "Feburaru",
-          "Psyco Halo",
-          "Zansubain",
-          "Doga",
-          "I (Kusi) Gundam",
-          "Penelope",
-          "Erefante",
-          "Dibinidado)"
-        ]
-      ],
       [
         "Phoenix Gundam",
         "Doga"
@@ -3338,6 +3259,9 @@ const UnitsData = {
         "Phoenix Gundam",
         "Noie Ziel"
       ]
+    ],
+    "code": [
+      "02-0603924"
     ]
   },
   "GM Kai": {
@@ -3658,7 +3582,7 @@ const UnitsData = {
         [
           "Gundam Heavens Sword",
           "Grand Gundam",
-          "GundamWalter Gundam"
+          "Walter Gundam"
         ]
       ]
     ],
@@ -3809,7 +3733,11 @@ const UnitsData = {
         "Zolidia"
       ]
     ],
-    "development": []
+    "development": [],
+    "code": [
+      "03-2968158",
+      "03-7519168"
+    ]
   },
   "Guabaze": {
     "design": [
@@ -3841,7 +3769,7 @@ const UnitsData = {
       ],
       [
         "Core Fighter",
-        "[Cannontype]"
+        "[Cannon type]"
       ]
     ],
     "development": [
@@ -3893,7 +3821,7 @@ const UnitsData = {
     "design": [
       [
         "Gundam",
-        "[Marine Type]"
+        "[Marine type]"
       ]
     ],
     "code": [
@@ -3937,7 +3865,7 @@ const UnitsData = {
       ],
       [
         "GW Bit",
-        "Any Gundam"
+        "[Any Gundam]"
       ]
     ],
     "development": [
@@ -4071,7 +3999,7 @@ const UnitsData = {
         "Phoenix Gundam",
         [
           "Abigoru",
-          "Gundam spiegel",
+          "Gundam Spiegel",
           "ST Gun"
         ]
       ]
@@ -4152,7 +4080,7 @@ const UnitsData = {
       ],
       [
         "Heavy Gun",
-        "Any Gundam"
+        "[Any Gundam]"
       ]
     ],
     "development": [
@@ -4198,7 +4126,7 @@ const UnitsData = {
   "Gundam Geminas 01": {
     "design": [
       [
-        "[Wing Gundam type]",
+        "[Gundam W type]",
         [
           "Gundam F90",
           "Gundam F91",
@@ -4278,7 +4206,7 @@ const UnitsData = {
       ],
       [
         "GT Bit",
-        "Any Gundam"
+        "[Any Gundam]"
       ]
     ],
     "development": [
@@ -4401,7 +4329,7 @@ const UnitsData = {
       [
         "Gundam",
         [
-          "Psycommu H. M. Zaku",
+          "Psycommu High Mobility Zaku",
           "Gira Doga Psycommu",
           "Psycommu Zaku"
         ]
@@ -4471,7 +4399,9 @@ const UnitsData = {
       ],
       [
         "Phoenix Gundam",
-        "Gundam Deathscythe (all 3 variations)"
+        "Gundam Deathscythe",
+        "Gundam Deathscythe Hell",
+        "Gundam Deathscythe Hell Custom"
       ]
     ],
     "code": [
@@ -4502,13 +4432,11 @@ const UnitsData = {
         [
           "Crossbone Gundam X1",
           "Crossbone Gundam X2",
-          "Crossbone gundam X1 Kai",
-          "DividerCrossbone gundam X2 Kai"
         ]
       ],
       [
         "GX Bit",
-        "Any Gundam"
+        "[Any Gundam]"
       ]
     ],
     "development": [
@@ -4528,7 +4456,7 @@ const UnitsData = {
     "design": [
       [
         "Javelin",
-        "Any Gundam"
+        "[Any Gundam]"
       ],
       [
         "Phoenix Gundam",
@@ -4656,7 +4584,7 @@ const UnitsData = {
       ],
       [
         "Phoenix Gundam",
-        "Gurantine"
+        "Grantine"
       ]
     ],
     "development": [
@@ -4689,6 +4617,9 @@ const UnitsData = {
     "development": [
       "Gira Doga",
       "Zusan"
+    ],
+    "code": [
+      "04-1655128"
     ]
   },
   "GX Bit": {
@@ -4713,7 +4644,7 @@ const UnitsData = {
       [
         "Phoenix Gundam",
         [
-          "Wing Gundam",
+          "W Gundam",
           "Mahiro"
         ]
       ],
@@ -4867,7 +4798,7 @@ const UnitsData = {
       "Space use High Mobility Zaku",
       "Zaku II Kai",
       "Zaku Diver",
-      "dizat Zaku"
+      "Desert Zaku"
     ],
     "stage": {
       "Mobile Suit Gundam": [
@@ -4907,7 +4838,7 @@ const UnitsData = {
         "GM Quail",
         [
           "Zaku II J",
-          "Zaku II Z",
+          "Zaku II F",
           "High Mobility Zaku II",
           "Zaku II Kai"
         ]
@@ -5309,7 +5240,7 @@ const UnitsData = {
         [
           "Dobenwolf",
           "Titania",
-          "Gundam Ashtaron HC"
+          "Gundam Ashutaron HC"
         ]
       ]
     ],
@@ -5329,7 +5260,7 @@ const UnitsData = {
         "Phoenix Gundam",
         [
           "[Gouf type]",
-          "Zondo-Ge"
+          "Zondo Ge"
         ]
       ]
     ],
@@ -5555,7 +5486,7 @@ const UnitsData = {
           "High Mobility Gelgog",
           "Space use High Mobility Zaku",
           "High Mobility Operation Unit",
-          "GM Custom High Mobility Type",
+          "GM Custom High Mobility type",
           "Leoru",
           "Abijo",
           "High Mobility Leo"
@@ -5571,7 +5502,7 @@ const UnitsData = {
           "High Mobility Gelgog",
           "Space use High Mobility Zaku",
           "High Mobility Operation Unit",
-          "GM Custom High Mobility Type",
+          "GM Custom High Mobility type",
           "Leoru",
           "Abijo",
           "High Mobility Leo"
@@ -5621,7 +5552,7 @@ const UnitsData = {
           "Prototype Psyco Gundam",
           "Psyco Gundam",
           "Psyco Gundam Mk II",
-          "Psyco gundam MK III"
+          "Psyco Gundam Mk III"
         ]
       ],
       [
@@ -5630,7 +5561,7 @@ const UnitsData = {
           "Prototype Psyco Gundam",
           "Psyco Gundam",
           "Psyco Gundam Mk II",
-          "Psyco gundam MK III"
+          "Psyco Gundam Mk III"
         ]
       ],
       [
@@ -5639,7 +5570,7 @@ const UnitsData = {
           "Prototype Psyco Gundam",
           "Psyco Gundam",
           "Psyco Gundam Mk II",
-          "Psyco gundam MK III"
+          "Psyco Gundam Mk III"
         ]
       ],
       [
@@ -5648,7 +5579,7 @@ const UnitsData = {
           "Prototype Psyco Gundam",
           "Psyco Gundam",
           "Psyco Gundam Mk II",
-          "Psyco gundam MK III"
+          "Psyco Gundam Mk III"
         ]
       ],
       [
@@ -5740,7 +5671,7 @@ const UnitsData = {
           "Ebil S",
           "Denon Zon",
           "Denon Ge",
-          "Zonde Ge"
+          "Zondo Ge"
         ]
       ]
     ],
@@ -5780,7 +5711,7 @@ const UnitsData = {
       [
         "Tornado Gundam",
         [
-          "Doragos",
+          "Toragos",
           "Maguanarc",
           "Gundam Leopard",
           "Rainosaras"
@@ -5800,6 +5731,9 @@ const UnitsData = {
   "Leo (Space use)": {
     "development": [
       "High Mobility Leo"
+    ],
+    "code": [
+      "01-2907061"
     ]
   },
   "Leon": {
@@ -5815,12 +5749,12 @@ const UnitsData = {
           "FA Gundam Mk II",
           "FAZZ",
           "FA Gundam Mk III",
-          "ZZ Gundam FA",
+          "ZZ Gundam-FA",
           "Gundam Sandrock",
           "Totoga",
           "Gundam Sandrock Kai",
           "Gundam Sandrock Custom",
-          "Mersurious",
+          "Mercurius",
           "Mercurius Shuivan",
           "Kaburu"
         ]
@@ -5828,7 +5762,7 @@ const UnitsData = {
       [
         "Phoenix Gundam",
         [
-          "Jegan Heavy type",
+          "Jegan Heavyarmor",
           "Lumber Gundam",
           "Dom Bainihitsu"
         ]
@@ -5897,7 +5831,7 @@ const UnitsData = {
           "R Jaja",
           "Gyan Kai",
           "Gundam Rose",
-          "Batorabensunma",
+          "Batorabensunmamu",
           "Crossbone Gundam X1",
           "Crossbone Gundam X1 Kai",
           "Crossbone Gundam X2",
@@ -5938,8 +5872,7 @@ const UnitsData = {
       [
         "Gundam Sandrock",
         [
-          "dizat Zaku",
-          "Desert Dom",
+          "Desert Zaku",
           "Desert Gelgog",
           "RF Desert Dom",
           "Oriphant"
@@ -5948,8 +5881,7 @@ const UnitsData = {
       [
         "Gundam Sandrock Kai",
         [
-          "dizat Zaku",
-          "Desert Dom",
+          "Desert Zaku",
           "Desert Gelgog",
           "RF Desert Dom",
           "Oriphant"
@@ -5958,8 +5890,7 @@ const UnitsData = {
       [
         "Gundam Sandrock Custom",
         [
-          "dizat Zaku",
-          "Desert Dom",
+          "Desert Zaku",
           "Desert Gelgog",
           "RF Desert Dom",
           "Oriphant"
@@ -5979,6 +5910,9 @@ const UnitsData = {
     ],
     "development": [
       "Oriphant"
+    ],
+    "code": [
+      "03-1526418"
     ]
   },
   "Mahiro": {
@@ -6083,7 +6017,10 @@ const UnitsData = {
         ]
       ]
     ],
-    "development": []
+    "development": [],
+    "code": [
+      "07-9308579"
+    ]
   },
   "Mass Product Qubeley": {
     "design": [
@@ -6189,7 +6126,10 @@ const UnitsData = {
         ]
       ]
     ],
-    "development": []
+    "development": [],
+    "code": [
+      "05-5203150",
+    ]
   },
   "Memedoza": {
     "design": [
@@ -6223,7 +6163,7 @@ const UnitsData = {
           "FA Gundam Mk II",
           "FA Gundam Mk III",
           "ZZ Gundam-FA",
-          "FA Hyaku Shiki",
+          "FA Hyaku Shiki Kai",
           "FAZZ",
           "Gundam Deathscythe",
           "Gundam Sandrock",
@@ -6297,7 +6237,7 @@ const UnitsData = {
         [
           "Gira Doga",
           "Gira Doga Kai",
-          "Gira doga Heavyarmor"
+          "Gira Doga Heavyarmor"
         ]
       ],
       [
@@ -6331,7 +6271,8 @@ const UnitsData = {
       "Borinook Samaan"
     ],
     "code": [
-      "07-6602001"
+      "07-6602001",
+      "07-7333005"
     ]
   },
   "Metasu": {
@@ -6359,7 +6300,11 @@ const UnitsData = {
         "ZZ Gundam-FA"
       ]
     ],
-    "development": []
+    "development": [],
+    "code": [
+      "04-0091178",
+      "04-8153840"
+    ]
   },
   "Musha Turn A Gundam": {
     "design": [
@@ -6515,7 +6460,7 @@ const UnitsData = {
     "design": [
       [
         "Phoenix Gundam",
-        "Zansubain"
+        "Zansupain"
       ]
     ],
     "code": [
@@ -6880,7 +6825,7 @@ const UnitsData = {
     "design": [
       [
         "Phoenix Gundam",
-        "Pezu Batari"
+        "Pez Batara"
       ]
     ],
     "development": [
@@ -6902,7 +6847,7 @@ const UnitsData = {
         [
           "Leo (Land use)",
           "Leo (Space use)",
-          "H. M. Leo"
+          "High Mobility Leo"
         ],
         "[Marine type]"
       ]
@@ -6963,7 +6908,7 @@ const UnitsData = {
         "Phoenix Gundam",
         [
           "Hi Nu Gundam",
-          "Seputemu Kai",
+          "Septem Kai",
           "D Gundam First"
         ]
       ],
@@ -6984,7 +6929,7 @@ const UnitsData = {
     "design": [
       [
         "Perfect Ziong",
-        "Any Gundam"
+        "[Any Gundam]"
       ]
     ],
     "development": [
@@ -7015,7 +6960,7 @@ const UnitsData = {
         [
           "GP02",
           "GP01",
-          "GP01-FB",
+          "GP01-Fb",
           "GP02A",
           "GP03-D",
           "GP03-S",
@@ -7229,7 +7174,7 @@ const UnitsData = {
   "RF Azam": {
     "design": [
       [
-        "[Gira Doga Type]",
+        "[Gira Doga type]",
         "Azam"
       ]
     ],
@@ -7243,7 +7188,7 @@ const UnitsData = {
   "RF Dom": {
     "design": [
       [
-        "[Gira Doga Type]",
+        "[Gira Doga type]",
         "[Dom type]"
       ]
     ],
@@ -7259,7 +7204,7 @@ const UnitsData = {
   "RF Gelgog": {
     "design": [
       [
-        "[Gira Doga Type]",
+        "[Gira Doga type]",
         "[Gelgog type]"
       ]
     ],
@@ -7273,7 +7218,7 @@ const UnitsData = {
   "RF Gouf": {
     "design": [
       [
-        "[Gira Doga Type]",
+        "[Gira Doga type]",
         "[Gouf type]"
       ]
     ],
@@ -7287,7 +7232,7 @@ const UnitsData = {
   "RF Gyan": {
     "design": [
       [
-        "[Gira Doga Type]",
+        "[Gira Doga type]",
         [
           "Gyan",
           "Gyan Kai",
@@ -7309,7 +7254,7 @@ const UnitsData = {
   "RF Zaku": {
     "design": [
       [
-        "[Gira Doga Type]",
+        "[Gira Doga type]",
         "[Zaku type]"
       ]
     ],
@@ -7330,7 +7275,7 @@ const UnitsData = {
   "RF Zugok": {
     "design": [
       [
-        "[Gira Doga Type]",
+        "[Gira Doga type]",
         [
           "Zugok",
           "Zugok E"
@@ -7441,7 +7386,7 @@ const UnitsData = {
   "Rising Gundam": {
     "design": [
       [
-        "Famtoma",
+        "Fantoma",
         [
           "Gundam",
           "Gundam NT1",
@@ -7449,18 +7394,18 @@ const UnitsData = {
           "Z Gundam",
           "ZZ Gundam",
           "Nu Gundam",
-          "F90",
-          "F91",
+          "Gundam F90",
+          "Gundam F91",
           "V2 Gundam",
           "Blue Destiny 3",
-          "W Zero",
+          "W Gundam Zero",
           "Gundam X",
           "S Gundam",
           "Neo Gundam",
           "Gundam LO Booster",
           "Turn A Gundam",
           "I (Kusi) Gundam",
-          "Crossbone gundam X3"
+          "Crossbone Gundam X3"
         ]
       ],
       [
@@ -7539,14 +7484,14 @@ const UnitsData = {
         ]
       ],
       [
-        "Zaku head",
+        "Zaku Head",
         [
           "Ashura Gundam",
           "[Zanscare type]"
         ]
       ],
       [
-        "Jeat Stream",
+        "Jetstream",
         [
           "Ashura Gundam",
           "[Zanscare type]"
@@ -7573,13 +7518,16 @@ const UnitsData = {
           "[Zanscare type]"
         ]
       ]
+    ],
+    "code": [
+      "02-1812499"
     ]
   },
   "Sazabi": {
     "design": [
       [
         "Gemaruku",
-        "[Gira Doga Type]"
+        "[Gira Doga type]"
       ]
     ],
     "development": [
@@ -7621,7 +7569,7 @@ const UnitsData = {
         ]
       ],
       [
-        "Gundam H-Arms Custom",
+        "Gundam Heavyarms Custom",
         [
           "Virgo",
           "Virgo II",
@@ -7695,6 +7643,9 @@ const UnitsData = {
     ],
     "development": [
       "Gozora"
+    ],
+    "code": [
+      "03-9791268"
     ]
   },
   "Shaitan": {
@@ -7770,7 +7721,7 @@ const UnitsData = {
     "design": [
       [
         "Nobushi",
-        "any Gundam Type Unit"
+        "[Any Gundam]"
       ]
     ],
     "code": [
@@ -7849,7 +7800,7 @@ const UnitsData = {
             "Leo (Land use)",
             "Leo (Space use)"
           ],
-          "EWAC Lro",
+          "EWAC Leo",
           "High Mobility Leo"
         ]
       ]
@@ -7875,7 +7826,7 @@ const UnitsData = {
         "Phoenix Gundam",
         [
           "Jurag",
-          "(Mass Product Geabaze)"
+          "Mass Product Guabaze"
         ]
       ]
     ],
@@ -7895,7 +7846,7 @@ const UnitsData = {
     "design": [
       [
         [
-          "dizat Zaku",
+          "Desert Zaku",
           "Desert GM",
           "Desert Gelgog",
           "RF Desert Dom",
@@ -7994,7 +7945,7 @@ const UnitsData = {
           "Battle Helicopter",
           "Nether Gundam"
         ],
-        "Any Gundam"
+        "[Any Gundam]"
       ]
     ],
     "note": [
@@ -8148,7 +8099,7 @@ const UnitsData = {
       [
         "Phoenix Gundam",
         [
-          "Esperensa",
+          "Esperansa",
           "Nautilus"
         ]
       ]
@@ -8191,7 +8142,7 @@ const UnitsData = {
         [
           "GP03-D",
           "Biguro",
-          "Biguro Maiya",
+          "Biguro Maiyer",
           "Val Valo",
           "Zoan",
           "Zodi Ack",
@@ -8204,9 +8155,9 @@ const UnitsData = {
           "Gundam Leopard",
           "Grantine",
           "Gundam Leopard Destroy",
-          "Abiju",
+          "Abijo",
           "Kangurijo",
-          "Dibinadado",
+          "Dibinidado",
           "G Falcon Destroy",
           "G Falcon Leopard"
         ]
@@ -8255,7 +8206,7 @@ const UnitsData = {
       [
         "Vayeat",
         [
-          "Gunshing",
+          "Kashingu",
           "Taurus",
           "D Unit",
           "Zusan"
@@ -8264,7 +8215,7 @@ const UnitsData = {
       [
         "Vayeat Shuivan",
         [
-          "Gunshing",
+          "Kashingu",
           "Taurus",
           "D Unit",
           "Zusan"
@@ -8273,7 +8224,7 @@ const UnitsData = {
       [
         "Mercurius",
         [
-          "Gunshing",
+          "Kashingu",
           "Taurus",
           "D Unit",
           "Zusan"
@@ -8282,7 +8233,7 @@ const UnitsData = {
       [
         "Mercurius Shuivan",
         [
-          "Gunshing",
+          "Kashingu",
           "Taurus",
           "D Unit",
           "Zusan"
@@ -8307,7 +8258,7 @@ const UnitsData = {
         "Phoenix Gundam",
         [
           "Qubeley Mk II (Puru)",
-          "Bagi doga"
+          "Bagi Doga"
         ]
       ]
     ],
@@ -8350,7 +8301,10 @@ const UnitsData = {
         ]
       ]
     ],
-    "development": []
+    "development": [],
+    "code": [
+      "01-9954619"
+    ]
   },
   "Walter Gundam": {
     "design": [
@@ -8431,7 +8385,7 @@ const UnitsData = {
         "Phoenix Gundam",
         [
           "Mega Rider",
-          "Rig Shako"
+          "Rig Shacko"
         ]
       ]
     ],
@@ -8483,7 +8437,7 @@ const UnitsData = {
         "Phoenix Gundam",
         [
           "Gundam X Divider",
-          "Rig Shako"
+          "Rig Shacko"
         ]
       ],
       [
@@ -8537,7 +8491,7 @@ const UnitsData = {
         [
           "Estarudosu",
           "Guza",
-          "I [Kusi] Gundam"
+          "I (Kusi) Gundam"
         ]
       ]
     ],
@@ -8634,7 +8588,7 @@ const UnitsData = {
     "design": [
       [
         "Garusu J",
-        "[Zaku Type]"
+        "[Zaku type]"
       ]
     ],
     "development": [
@@ -8703,7 +8657,7 @@ const UnitsData = {
           "Waiban",
           "Aries",
           "GT Four",
-          "arient",
+          "Barient",
           "Gyaburan Kai"
         ],
         "[Zaku type]"
@@ -8742,7 +8696,7 @@ const UnitsData = {
           "High Mobility Zaku II",
           "Zaku II Kai"
         ],
-        "Observer[Observer type]"
+        "[Observer type]"
       ],
       [
         "Phoenix Gundam",
@@ -8786,7 +8740,7 @@ const UnitsData = {
         [
           "First Ball",
           "Ball Kai",
-          "133 type ball"
+          "133 type Ball"
         ]
       ],
       [
@@ -8794,7 +8748,7 @@ const UnitsData = {
         [
           "First Ball",
           "Ball Kai",
-          "133 type ball"
+          "133 type Ball"
         ]
       ],
       [
@@ -8936,7 +8890,7 @@ const UnitsData = {
   "Zogok": {
     "design": [
       [
-        "Garus J",
+        "Garusu J",
         [
           "Zugok",
           "Zugok E",
@@ -9213,9 +9167,10 @@ const UnitsData = {
       [
         [
           "Zaku I",
-          "Gaia's Custom High Mobility",
+          "Gaia's Custom High Mobility Zaku II",
           "High Mobility Zaku II",
-          "Zaku II"
+          "Zaku II F",
+          "Zaku II J",
         ],
         "Gaia"
       ]
@@ -9238,7 +9193,10 @@ const UnitsData = {
   "Galma's Custom Zaku II": {
     "design": [
       [
-        "Zaku II",
+        [
+          "Zaku II F",
+          "Zaku II J"
+        ],
         "Galma"
       ]
     ],
@@ -9261,7 +9219,10 @@ const UnitsData = {
     "design": [
       [
         "Zaku I",
-        "Mashu or Ortega"
+        [
+          "Mashu",
+          "Ortega"
+        ]
       ]
     ],
     "code": [
@@ -9329,7 +9290,10 @@ const UnitsData = {
   "Char's Custom Zaku II": {
     "design": [
       [
-        "Zaku II",
+        [
+          "Zaku II F",
+          "Zaku II J"
+        ],
         "Char (FG)"
       ]
     ],
@@ -9362,7 +9326,10 @@ const UnitsData = {
   "Dozul's Custom Zaku II": {
     "design": [
       [
-        "Zaku II",
+        [
+          "Zaku II F",
+          "Zaku II J"
+        ],
         "Dozul"
       ]
     ],
@@ -9429,7 +9396,11 @@ const UnitsData = {
     "design": [
       [
         "GM",
-        "Master"
+        [
+          "Master",
+          "Leon",
+          "Maximilian"
+        ]
       ]
     ],
     "code": [
@@ -9440,7 +9411,7 @@ const UnitsData = {
     "design": [
       [
         "GM Cannon",
-        "Any White Dingo"
+        "[Any White Dingo]"
       ]
     ],
     "code": [
@@ -9497,7 +9468,7 @@ const UnitsData = {
     "design": [
       [
         "Mass Product Gun Cannon",
-        "Any White Dingo"
+        "[Any White Dingo]"
       ]
     ],
     "code": [
@@ -9507,9 +9478,15 @@ const UnitsData = {
   "Matsunaga's Custom Zaku II": {
     "design": [
       [
-        "Zaku II",
+        [
+          "Zaku II F",
+          "Zaku II J"
+        ],
         "Matsunaga"
       ]
+    ],
+    "code": [
+      "03-4250785"
     ]
   },
   "Matsunaga's Custom High Mobility Zaku II": {
@@ -9568,12 +9545,6 @@ const UnitsData = {
     ]
   },
   "Rezun's Custom Gira Doga": {
-    "design": [
-      [
-        "None",
-        "None"
-      ]
-    ],
     "code": [
       "05-0718348"
     ]
@@ -9920,7 +9891,10 @@ const UnitsData = {
   },
   "Psycommu Zaku": {
     "development": [
-      "Psycommu H. M. Zaku"
+      "Psycommu High Mobility Zaku"
+    ],
+    "code": [
+      "02-8564357"
     ]
   },
   "Gouf Flight Experiment": {
@@ -10138,7 +10112,7 @@ const UnitsData = {
           "FA Gundam Mk III",
           "ZZ Gundam-FA",
           "Nu Gundam HWS",
-          "FA Hyaku Shiki"
+          "FA Hyaku Shiki Kai"
         ]
       ]
     ],
@@ -10212,7 +10186,10 @@ const UnitsData = {
     ]
   },
   "Mass Product Psyco Gundam": {
-    "development": []
+    "development": [],
+    "code": [
+      "07-0775618"
+    ]
   },
   "Psyco Gundam Mk III": {
     "development": [
@@ -10307,6 +10284,122 @@ const UnitsData = {
     ]
   },
   "Gira Doga Psycommu": {
+    "design": [
+      [
+        "Gira Doga",
+        [
+          "Nu Gundam",
+          "Nu Gundam HWS",
+          "Psycommu High Mobility Zaku",
+          "Burao Buro",
+          "Elmeth",
+          "Qubeley",
+          "Qubeley Mk II",
+          "Queen Mantha",
+          "Mass Product Qubeley",
+          "Prototype Qubeley",
+          "Prototype Psyco Gundam",
+          "Psyco Gundam Mk II",
+          "Jagd Doga",
+          "Sazabi",
+          "Psyco Doga",
+          "Alpha Aziel",
+          "Titania",
+          "Noie Ziel II",
+          "Hi Nu Gundam",
+          "Psycommu Zaku",
+          "Bagi Doga",
+          "Beltigo",
+          "Ebil Doga",
+          "Rig Ring",
+          "Nightingale",
+          "Feburaru",
+          "Psyco Halo",
+          "Zansupain",
+          "Doga",
+          "I (Kusi) Gundam",
+          "Penelope",
+          "Erefante",
+          "Dibinidado"
+        ]
+      ],
+      [
+        "Gira Doga Kai",
+        [
+          "Nu Gundam",
+          "Nu Gundam HWS",
+          "Psycommu High Mobility Zaku",
+          "Burao Buro",
+          "Elmeth",
+          "Qubeley",
+          "Qubeley Mk II",
+          "Queen Mantha",
+          "Mass Product Qubeley",
+          "Prototype Qubeley",
+          "Prototype Psyco Gundam",
+          "Psyco Gundam Mk II",
+          "Jagd Doga",
+          "Sazabi",
+          "Psyco Doga",
+          "Alpha Aziel",
+          "Titania",
+          "Noie Ziel II",
+          "Hi Nu Gundam",
+          "Psycommu Zaku",
+          "Bagi Doga",
+          "Beltigo",
+          "Ebil Doga",
+          "Rig Ring",
+          "Nightingale",
+          "Feburaru",
+          "Psyco Halo",
+          "Zansupain",
+          "Doga",
+          "I (Kusi) Gundam",
+          "Penelope",
+          "Erefante",
+          "Dibinidado"
+        ]
+      ],
+      [
+        "Gira Doga Heavyarmor",
+        [
+          "Nu Gundam",
+          "Nu Gundam HWS",
+          "Psycommu High Mobility Zaku",
+          "Burao Buro",
+          "Elmeth",
+          "Qubeley",
+          "Qubeley Mk II",
+          "Queen Mantha",
+          "Mass Product Qubeley",
+          "Prototype Qubeley",
+          "Prototype Psyco Gundam",
+          "Psyco Gundam Mk II",
+          "Jagd Doga",
+          "Sazabi",
+          "Psyco Doga",
+          "Alpha Aziel",
+          "Titania",
+          "Noie Ziel II",
+          "Hi Nu Gundam",
+          "Psycommu Zaku",
+          "Bagi Doga",
+          "Beltigo",
+          "Ebil Doga",
+          "Rig Ring",
+          "Nightingale",
+          "Feburaru",
+          "Psyco Halo",
+          "Zansupain",
+          "Doga",
+          "I (Kusi) Gundam",
+          "Penelope",
+          "Erefante",
+          "Dibinidado"
+        ]
+      ]
+    ],
     "development": [
       "Bagi Doga"
     ],
@@ -10320,6 +10413,12 @@ const UnitsData = {
     ],
     "code": [
       "07-7133774"
+    ]
+  },
+  "Jagd Doga": {
+    "_ref": [
+      "Jagd Doga (Gyunei type)",
+      "Jagd Doga (Quess type)"
     ]
   },
   "Jagd Doga (Gyunei type)": {
@@ -10446,7 +10545,10 @@ const UnitsData = {
     ]
   },
   "GP04G": {
-    "development": []
+    "development": [],
+    "code": [
+      "05-1549036"
+    ]
   },
   "Noie Ziel II": {
     "development": [],
@@ -10854,7 +10956,7 @@ const UnitsData = {
     "development": [
       "Aries",
       "Toragos",
-      "Leo (Space Use)"
+      "Leo (Space use)"
     ],
     "code": [
       "01-7733365"
@@ -11022,6 +11124,15 @@ const UnitsData = {
     ]
   },
   "Gundam X Divider": {
+    "design": [
+      [
+        "Phoenix Gundam",
+        [
+          "Crossbone Gundam X1 Kai",
+          "Crossbone Gundam X2 Kai"
+        ]
+      ]
+    ],
     "development": [
       "Gundam DX"
     ],
@@ -11030,7 +11141,11 @@ const UnitsData = {
     ]
   },
   "Gundam Airmaster B": {
-    "development": []
+    "development": [],
+    "code": [
+      "07-7679778",
+      "07-9461671"
+    ]
   },
   "GW Bit": {
     "development": [
@@ -11123,9 +11238,9 @@ const UnitsData = {
           "Ball",
           "W Gundam",
           "Dotapu",
-          "133 type ball"
+          "133 type Ball"
         ],
-        "Water type[Marine type]"
+        "[Marine type]"
       ]
     ],
     "development": [
@@ -11366,7 +11481,9 @@ const UnitsData = {
   },
   "Polar Bear": {
     "stage": {
-      "New Mobile Century Gundam X": [ "4" ]
+      "New Mobile Century Gundam X": [
+        "4"
+      ]
     },
     "code": [
       "03-4116158"

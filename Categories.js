@@ -213,7 +213,7 @@ const Categories = {
         "Zaku Minelayer",
         "Zaku 50",
         "Zaku Head",
-        "Dizat Zaku",
+        "Desert Zaku",
         "Zaku III Last type",
         "RF Zaku",
         "Zaku Cannon",

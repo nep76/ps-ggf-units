@@ -213,6 +213,71 @@ function search_unit( str )
     return true;
 }
 
+function _debug_ids( data, re )
+{
+    if( Array.isArray( data ) ){
+        for( const item of data ){
+            _debug_ids( item, re );
+        }
+    } else if( typeof data == "object" ){
+        for( const key in data ){
+            switch( key ){
+                case "stage":
+                case "note":
+                case "code":
+                    continue;
+                default:
+                    _debug_ids( data[key], re );
+            }
+        }
+    } else{
+        if( ! Object.hasOwn( TransJA, data ) ){
+            re.appendChild( ( e = document.createElement( "li" ) ) );
+            e.textContent = "T: " + data;
+        }
+            
+        if( data.charAt( 0 ) !== "[" && ! Object.hasOwn( UnitsData, data ) ){
+            re.appendChild( ( e = document.createElement( "li" ) ) );
+            e.textContent = "D: " + data;
+        }
+    }
+}
+
+function _debug_codes( data, re )
+{
+    for( const key in data ){
+        resolv_ref( data[key] );
+        if( ! Object.hasOwn( data[key], "code" ) ){
+            re.appendChild( ( e = document.createElement( "li" ) ) );
+            e.textContent = "C: " + key + "(" + _t(key) + ")";
+        }
+    }
+}
+
+async function _debug_orphan( data, re )
+{
+    let found;
+    for( const key1 in data ){
+        found = false;
+        for( const key2 in data ){
+            if( contains( data[key2], key1 ) ){
+                found = true;
+                break;
+            }
+        }
+        if(
+            ! found &&
+            ( ! Object.hasOwn( data[key1], "design" )      || ! data[key1]["design"].length ) &&
+            ( ! Object.hasOwn( data[key1], "development" ) || ! data[key1]["development"].length ) &&
+            ( ! Object.hasOwn( data[key1], "stage" )       || ! Object.keys( data[key1]["stage"] ).length )
+        ){
+            re.appendChild( ( e = document.createElement( "li" ) ) );
+            e.textContent = "O: " + key1;
+        }
+        await new Promise( r => setTimeout( r, 0 ) );
+    }
+}
+
 function ev_loadhash( e )
 {
     const result = document.getElementById( "ggf-unit-db-result" );
@@ -259,6 +324,12 @@ function ev_loadhash( e )
                     ResultTree["match"].appendChild( ( e = document.createElement( "li" ) ) );
                     _a( e, _t(key) )
                 }
+                break;
+            case "_DEBUG":
+                label = hash;
+                _debug_ids( UnitsData, ResultTree["match"] );
+                _debug_codes( UnitsData, ResultTree["match"] );
+                _debug_orphan( UnitsData, ResultTree["match"] );
                 break;
             default:
                  label = _t(hash);
