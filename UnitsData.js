@@ -9553,7 +9553,7 @@ const UnitsData = {
     "design": [
       [
         "Zoro",
-        "Chronicle"
+        "Chronocle"
       ]
     ],
     "code": [
