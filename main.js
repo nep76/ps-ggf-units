@@ -58,14 +58,14 @@ function contains( data, target )
     return typeof data === "string" ? is_match( data, target, true ) : data === target;
 }
 
-function _a( element, key )
+function _a( key )
 {
     const a = document.createElement( "a" );
     a.textContent = _t(key);
     a.href = "#" + encodeURIComponent( key );
     a.addEventListener( "click", ( e ) => { ResetScrollPosition = true; } );
 
-    element.appendChild( a );
+    return a;
 }
 
 function _t( str )
@@ -115,8 +115,8 @@ function search_unit( str )
     ResultTree["match"].replaceChildren();
     for( const item of units ){
         if( item == match ) continue;
-        ResultTree["match"].appendChild( ( e = document.createElement( "li") ) );
-        _a( e, _t(item) );
+        ResultTree["match"].appendChild( ( e = document.createElement( "li" ) ) );
+        e.appendChild( _a( _t(item) ) );
     }
 
     ResultTree["unitname"].textContent = _t(unit.name);
@@ -131,11 +131,11 @@ function search_unit( str )
                     const mls = document.createElement( "ul" )
                     for( const _m of material ){
                         mls.appendChild( document.createElement( "li" ) );
-                        _a( mls.lastChild, _t(_m) );
+                        mls.lastChild.appendChild( _a( _t(_m) ) );
                     }
                     e.lastChild.appendChild( mls );
                 } else{
-                    _a( e.lastChild, _t(material) );
+                    e.lastChild.appendChild( _a( _t(material) ) );
                 }
             }
         }
@@ -148,7 +148,7 @@ function search_unit( str )
     if( Object.hasOwn( unit.data, "development" ) && unit.data.development.length ){
         for( const development of unit.data.development ){
             ResultTree["dev-to"].appendChild( ( e = document.createElement( "li" ) ) );
-            _a( e, _t(development) );
+            e.appendChild( _a( _t(development) ) );
         }
     } else{
         ResultTree["dev-to"].appendChild( ( e = document.createElement( "li" ) ) );
@@ -169,7 +169,7 @@ function search_unit( str )
         if( dev_from.length ){
             for( const src_unit of dev_from ){
                 ResultTree["dev-from"].appendChild( ( e = document.createElement( "li" ) ) );
-                _a( e, _t(src_unit) );
+                e.appendChild( _a( _t(src_unit) ) );
             }
         } else{
             ResultTree["dev-from"].appendChild( ( e = document.createElement( "li" ) ) );
@@ -190,9 +190,17 @@ function search_unit( str )
 
     ResultTree["note"].replaceChildren();
     if( Object.hasOwn( unit.data, "note" ) && unit.data.note.length ){
+        const re = /##(.*?)##/g;
+        let pos, anchor;
         for( const note of unit.data.note ){
             ResultTree["note"].appendChild( ( e = document.createElement( "li" ) ) );
-            e.textContent = _t(note);
+            pos = 0;
+            while( ( anchor = re.exec( note ) )  !== null ){
+                e.append( note.slice( pos, anchor.index ) );
+                e.append( _a( _t(anchor[1]) ) );
+                pos = re.lastIndex;
+            }
+            e.append( note.slice( pos ) );
         }
     } else{
         ResultTree["note"].appendChild( ( e = document.createElement( "li" ) ) );

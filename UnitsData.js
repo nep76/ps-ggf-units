@@ -11418,6 +11418,9 @@ const UnitsData = {
     ]
   },
   "Daughtress Command (Federation)": {
+    "note": [
+      "##Daughtress (Federation)##をリーダーに配置"
+    ],
     "code": [
       "02-7806690"
     ]
@@ -11433,6 +11436,9 @@ const UnitsData = {
     ]
   },
   "Daughtress Command (Alternative)": {
+    "note": [
+      "##Daughtress (Alternative)##をリーダーに配置"
+    ],
     "code": [
       "02-9044508"
     ]
