@@ -330,6 +330,37 @@ a:hover {
     color: #666;
 }
 
+/* ナビゲーション */
+#move-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 44px;
+    height: 44px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0.7;
+
+    background-color: #aaa;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+#move-top[hidden]{
+    display: none;
+}
+
+#move-top:hover {
+    background-color: #345fae;
+    opacity: 1;
+}
 
 /* スマホ */
 

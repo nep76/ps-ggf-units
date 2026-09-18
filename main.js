@@ -433,6 +433,21 @@ window.addEventListener("hashchange", ( e ) => {
 } );
 
 document.addEventListener( "DOMContentLoaded", ( e ) => {
+    const movetop = document.getElementById("move-top");
+    movetop.hidden = true;
+
+    window.addEventListener("scroll", () => {
+        const search = document.getElementById( "ggf-unit-db-search-name" );
+        movetop.hidden = search.getBoundingClientRect().bottom >= 0;
+    });
+
+    movetop.addEventListener("click", () => {
+        window.scrollTo( {
+            top: 0,
+            behavior: "instant"
+        } );
+    });
+
     for( const key in UnitsData ) resolv_ref( UnitsData[key] );
     ev_loadhash( e );
 } );
