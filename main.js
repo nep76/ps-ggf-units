@@ -1,48 +1,21 @@
 let ResultTree = {};
 let ResetScrollPosition = false;
 
-function resolv_ref( unit )
-{
-    if( ! Object.hasOwn( unit, "_ref" ) ) return;
-
-    const refs = unit._ref;
-    delete unit._ref;
-
-    for( const unitname of refs ){
-        const merge_unit = UnitsData[unitname];
-
-        if( ! merge_unit ){
-            console.log( "INVALID UNIT REFERENCE: " + unitname );
-            continue;
-        }
-        
-        for( const key in merge_unit ){
-            if( key === "stage" ){
-                if( ! Object.hasOwn( unit, key ) ) unit[key] = {};
-
-                for( const title in merge_unit.stage ){
-                    unit.stage[title] = [ ...new Set( [...( unit.stage[title] ?? [] ), ...merge_unit.stage[title] ] ) ];
-                }
-            } else{
-                if( Array.isArray( merge_unit[key] ) ){
-                    unit[key] = [ ...new Set( [...( unit[key] ?? [] ), ...( merge_unit[key] ?? [] ) ] ) ];
-                } else if( typeof merge_unit[key] === "object" ){
-                    unit[key] = { ...( unit[key] ?? {} ), ...( merge_unit[key] ?? {} ) };
-                } else{
-                    unit[key] = merge_unit[key];
-                }
-            }
-        }
-    }
-}
-
 function is_match( a, b, fizzy )
 {
-    const _a = normalize( a );
-    const _ta = normalize( _t(a) );
-    const _b = normalize( b );
+    let _a = normalize( a );
+    let _ta = normalize( _t(a) );
+    let _b = normalize( b );
 
-    return fizzy ? ( _a.includes( _b ) || _ta.includes( _b ) ) : ( _a == _b || _ta == _b );
+    if( fizzy ){
+        const re = /\s*\(.*\)$/;
+        _a  = _a.replace( re, "" );
+        _ta = _ta.replace( re, "" );
+        _b  = _b.replace( re, "" );
+        return ( _a.includes( _b ) || _ta.includes( _b ) );
+    } else{
+        return ( _a == _b || _ta == _b );
+    }
 }
 
 function contains( data, target )
@@ -109,8 +82,6 @@ function search_unit( str )
         name: match,
         data: UnitsData[match]
     };
-
-    resolv_ref( unit.data );
 
     ResultTree["match"].replaceChildren();
     for( const item of units ){
@@ -221,6 +192,42 @@ function search_unit( str )
     return true;
 }
 
+
+function resolv_ref( unit )
+{
+    if( ! Object.hasOwn( unit, "_ref" ) ) return;
+
+    const refs = unit._ref;
+    delete unit._ref;
+
+    for( const unitname of refs ){
+        const merge_unit = UnitsData[unitname];
+
+        if( ! merge_unit ){
+            console.log( "INVALID UNIT REFERENCE: " + unitname );
+            continue;
+        }
+        
+        for( const key in merge_unit ){
+            if( key === "stage" ){
+                if( ! Object.hasOwn( unit, key ) ) unit[key] = {};
+
+                for( const title in merge_unit.stage ){
+                    unit.stage[title] = [ ...new Set( [...( unit.stage[title] ?? [] ), ...merge_unit.stage[title] ] ) ];
+                }
+            } else{
+                if( Array.isArray( merge_unit[key] ) ){
+                    unit[key] = [ ...new Set( [...( unit[key] ?? [] ), ...( merge_unit[key] ?? [] ) ] ) ];
+                } else if( typeof merge_unit[key] === "object" ){
+                    unit[key] = { ...( unit[key] ?? {} ), ...( merge_unit[key] ?? {} ) };
+                } else{
+                    unit[key] = merge_unit[key];
+                }
+            }
+        }
+    }
+}
+
 function _debug_ids( data, re )
 {
     if( Array.isArray( data ) ){
@@ -323,14 +330,14 @@ function ev_loadhash( e )
                 label = "全ユニット一覧";
                 for( const key of Object.keys( UnitsData ).sort( ( a, b ) => _t( a ).localeCompare( _t( b ), "ja" ) ) ){
                     ResultTree["match"].appendChild( ( e = document.createElement( "li" ) ) );
-                    _a( e, _t(key) )
+                    e.appendChild( _a( _t(key) ) );
                 }
                 break;
             case "_CATEGORIES":
                 label = "カテゴリ一覧";
                 for( const key of Object.keys( Categories ).sort( ( a, b ) => _t( a ).localeCompare( _t( b ), "ja" ) ) ){
                     ResultTree["match"].appendChild( ( e = document.createElement( "li" ) ) );
-                    _a( e, _t(key) )
+                    e.appendChild( _a( _t(key) ) );
                 }
                 break;
             case "_DEBUG":
@@ -346,7 +353,7 @@ function ev_loadhash( e )
                 if( cat ){
                     for( const key of Categories[cat].sort( ( a, b ) => _t( a ).localeCompare( _t( b ), "ja" ) ) ){
                         ResultTree["match"].appendChild( ( e = document.createElement( "li" ) ) );
-                        _a( e, _t(key) )
+                        e.appendChild( _a( _t(key) ) );
                     }
                 } else{
                     ResultTree["match"].appendChild( ( e = document.createElement( "li" ) ) );
@@ -425,4 +432,7 @@ window.addEventListener("hashchange", ( e ) => {
     ev_loadhash( e );
 } );
 
-document.addEventListener( "DOMContentLoaded", ev_loadhash );
+document.addEventListener( "DOMContentLoaded", ( e ) => {
+    for( const key in UnitsData ) resolv_ref( UnitsData[key] );
+    ev_loadhash( e );
+} );
