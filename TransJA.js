@@ -1,5 +1,8 @@
 const TransJA = {
 	"Default factory list": "初期生産リスト",
+	"Display the code after finishing all stages": "ゲームクリア時に黒歴史コードを入手",
+	"Starting Unit (No savedata convert)": "初期ユニット（セーブデータ未コンバート時のみ）",
+	"Assign ##1## as the leader": "##1##をリーダーに配置",
 
 	"Mobile Suit Gundam": "機動戦士ガンダム",
 	"Mobile Suit Gundam The 08th MS Team": "機動戦士ガンダム 第08MS小隊",
@@ -37,6 +40,8 @@ const TransJA = {
 	"[Zanscare type]": "[ザンスカール系]",
 	"[Zaku type]": "[ザク系]",
 	"[Z Gundam type]": "[Zガンダム系]",
+
+	"Hardpoint System: ##...##": "ハードポイント・システム: ##...##",
 
 	"Amuro (Z)": "アムロ・レイ (Z)",
 	"Char (FG)": "シャア・アズナブル (1st)",
@@ -210,7 +215,7 @@ const TransJA = {
 	"Gundam F90 S": "ガンダムF90S",
 	"Gundam F90 II": "ガンダムF90II",
 	"Gundam F90 II I": "ガンダムF90II I",
-	"Gundam F90 II L": "ガンダムF90IIL",
+	"Gundam F90 II L": "ガンダムF90II L",
 	"Gundam F91": "ガンダムF91",
 	"Gundam LO Booster": "ガンダムLOブースター",
 	"Gundam Grip": "ガンダムグリープ",

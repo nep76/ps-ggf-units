@@ -48,7 +48,7 @@ const UnitsData = {
       "Hover Truck"
     ],
     "note": [
-      "Default factory list"
+      [ "Default factory list" ]
     ],
     "code": [
       "01-8549484"
@@ -1379,7 +1379,7 @@ const UnitsData = {
       "Leo (Space use)"
     ],
     "note": [
-      "Default factory list"
+      [ "Default factory list" ]
     ],
     "code": [
       "01-4471883"
@@ -1720,7 +1720,7 @@ const UnitsData = {
       "Fly Mantha"
     ],
     "note": [
-      "Default factory list"
+      [ "Default factory list" ]
     ],
     "code": [
       "01-1648314"
@@ -2163,7 +2163,7 @@ const UnitsData = {
       "Bairon"
     ],
     "note": [
-      "Default factory list"
+      [ "Default factory list" ]
     ],
     "code": [
       "01-2719903"
@@ -2266,7 +2266,7 @@ const UnitsData = {
       ]
     ],
     "note": [
-      "Default factory list"
+      [ "Default factory list" ]
     ],
     "code": [
       "01-2984903"
@@ -2381,7 +2381,7 @@ const UnitsData = {
       "Ball"
     ],
     "note": [
-      "Default factory list"
+      [ "Default factory list" ]
     ],
     "code": [
       "01-1365532"
@@ -3676,7 +3676,7 @@ const UnitsData = {
       "D.O.M.E. Bit"
     ],
     "note": [
-      "Default factory list"
+      [ "Default factory list" ]
     ],
     "code": [
       "05-2301026"
@@ -4071,6 +4071,9 @@ const UnitsData = {
       "Gundam F90 II",
       "Hardygun"
     ],
+    "note": [
+      [ "Hardpoint System: ##...##", "Gundam F90 A", "Gundam F90 M", "Gundam F90 S" ]
+    ],
     "code": [
       "07-2227132"
     ]
@@ -4088,6 +4091,9 @@ const UnitsData = {
     "development": [
       "Gundam F91",
       "Cluster Gundam"
+    ],
+    "note": [
+      [ "Hardpoint System: ##...##", "Gundam F90 II I", "Gundam F90 II L" ]
     ],
     "code": [
       "08-6464711"
@@ -4753,6 +4759,9 @@ const UnitsData = {
     ],
     "development": [
       "Psyco Halo"
+    ],
+    "code": [
+      "08-4178728"
     ]
   },
   "Heavy Gundam": {
@@ -4876,7 +4885,7 @@ const UnitsData = {
     ],
     "development": [],
     "note": [
-      "Default factory list"
+      [ "Default factory list" ]
     ],
     "code": [
       "01-0412078"
@@ -5580,7 +5589,7 @@ const UnitsData = {
       "Geze"
     ],
     "note": [
-      "Default factory list"
+      [ "Default factory list" ]
     ],
     "code": [
       "02-1015314"
@@ -6885,7 +6894,7 @@ const UnitsData = {
       ]
     },
     "note": [
-      "Default factory list"
+      [ "Default factory list" ]
     ],
     "code": [
       "01-9936701"
@@ -6994,6 +7003,9 @@ const UnitsData = {
     ],
     "development": [
       "Psycoro Gundam"
+    ],
+    "code": [
+      "10-6131565"
     ]
   },
   "Psycoro Gundam": {
@@ -7868,7 +7880,7 @@ const UnitsData = {
       "Seiba Fish"
     ],
     "note": [
-      "Default factory list"
+      [ "Default factory list" ]
     ],
     "code": [
       "01-9448532"
@@ -7938,7 +7950,7 @@ const UnitsData = {
       ]
     ],
     "note": [
-      "Starting Unit (No savedata convert)"
+      [ "Starting Unit (No savedata convert)" ]
     ],
     "code": [
       "04-0094005"
@@ -8067,8 +8079,6 @@ const UnitsData = {
     "_ref": [
       "V Gundam (MS)",
       "V Gundam (Split)",
-      "V Gundam Hexa (MS)",
-      "V Gundam Hexa (Split)",
       "V Dash Gundam (MS)",
       "V Dash Gundam (Split)",
       "Top Fighter V"
@@ -8756,7 +8766,7 @@ const UnitsData = {
       "GM"
     ],
     "note": [
-      "Default factory list"
+      [ "Default factory list" ]
     ],
     "code": [
       "01-7961590"
@@ -9575,7 +9585,7 @@ const UnitsData = {
       "Don Escargo"
     ],
     "note": [
-      "Default factory list"
+      [ "Default factory list" ]
     ],
     "code": [
       "01-3190309"
@@ -10540,6 +10550,14 @@ const UnitsData = {
       "10-7906117"
     ]
   },
+  "Jegan A type": {
+    "note": [
+      [ "Assign ##1## at the leader", "Jegan B type" ]
+    ],
+    "code": [
+      "04-3694696"
+    ]
+  },
   "Jegan B type": {
     "development": [
       "Heavy Gun"
@@ -10863,7 +10881,7 @@ const UnitsData = {
       "Nobushi"
     ],
     "note": [
-      "Default factory list"
+      [ "Default factory list" ]
     ],
     "code": [
       "01-4595827"
@@ -10883,6 +10901,9 @@ const UnitsData = {
         "8"
       ]
     },
+    "note": [
+      [ "Hardpoint System: ##...##", "Death Navy", "Death Body", "Death Beast" ]
+    ],
     "code": [
       "02-0052586"
     ]
@@ -11230,7 +11251,7 @@ const UnitsData = {
       ]
     },
     "note": [
-      "Default factory list"
+      [ "Default factory list" ]
     ],
     "code": [
       "01-9842027"
@@ -11257,11 +11278,17 @@ const UnitsData = {
     ]
   },
   "Seiba Fish (Leader type)": {
+    "note": [
+      [ "Assign ##1## at the leader", "Seiba Fish" ]
+    ],
     "code": [
       "01-4172603"
     ]
   },
   "Zaku II F (Leader type)": {
+    "note": [
+      [ "Assign ##1## at the leader", "Zaku II F" ]
+    ],
     "code": [
       "01-4909401"
     ]
@@ -11349,6 +11376,9 @@ const UnitsData = {
     ]
   },
   "Death Navy": {
+    "note": [
+      [ "Hardpoint System: ##...##", "Death Army", "Death Body", "Death Beast" ]
+    ],
     "code": [
       "02-0979470"
     ]
@@ -11359,7 +11389,9 @@ const UnitsData = {
       "02-0984275"
     ]
   },
-  "Death Body": {
+  "Death Body": {    "note": [
+      [ "Hardpoint System: ##...##", "Death Army", "Death Navy", "Death Beast" ]
+    ],
     "code": [
       "02-1642000"
     ]
@@ -11384,7 +11416,9 @@ const UnitsData = {
       "02-2313652"
     ]
   },
-  "Death Beast": {
+  "Death Beast": {    "note": [
+      [ "Hardpoint System: ##...##", "Death Army", "Death Navy", "Death Body" ]
+    ],
     "code": [
       "02-2349474"
     ]
@@ -11419,7 +11453,7 @@ const UnitsData = {
   },
   "Daughtress Command (Federation)": {
     "note": [
-      "##Daughtress (Federation)##をリーダーに配置"
+      [ "Assign ##1## as the leader", "Daughtress (Federation)" ]
     ],
     "code": [
       "02-7806690"
@@ -11437,7 +11471,7 @@ const UnitsData = {
   },
   "Daughtress Command (Alternative)": {
     "note": [
-      "##Daughtress (Alternative)##をリーダーに配置"
+      [ "Assign ##1## as the leader", "Daughtress (Alternative)" ]
     ],
     "code": [
       "02-9044508"
@@ -11449,11 +11483,17 @@ const UnitsData = {
     ]
   },
   "Zaku Marina (Leader type)": {
+    "note": [
+      [ "Assign ##1## at the leader", "Zaku Marina" ]
+    ],
     "code": [
       "02-9604062"
     ]
   },
   "High Mobility Gelgog (Leader type)": {
+    "note": [
+      [ "Assign ##1## at the leader", "High Mobility Gelgog" ]
+    ],
     "code": [
       "03-0057203"
     ]
@@ -11499,6 +11539,9 @@ const UnitsData = {
     ]
   },
   "DHMC Waizuwarabi": {
+    "note": [
+      [ "Assign ##1## as the leader", "DHM Faiawarabi" ]
+    ],
     "code": [
       "03-9726551"
     ]
@@ -11556,11 +11599,17 @@ const UnitsData = {
     ]
   },
   "RF Zaku (Leader type)": {
+    "note": [
+      [ "Assign ##1## at the leader", "RF Zaku" ]
+    ],
     "code": [
       "04-2164258"
     ]
   },
   "Gira Doga (Leader type)": {
+    "note": [
+      [ "Assign ##1## at the leader", "Gira Doga" ]
+    ],
     "code": [
       "04-2422211"
     ]
@@ -11684,6 +11733,15 @@ const UnitsData = {
       "05-9907005"
     ]
   },
+  "V Gundam Hexa": {
+    "note": [
+      [ "Assign ##1## at the leader", "V Gundam" ]
+    ],
+    "_ref": [
+      "V Gundam Hexa (MS)",
+      "V Gundam Hexa (Split)"
+    ]
+  },
   "V Gundam Hexa (MS)": {
     "code": [
       "06-4310330"
@@ -11750,6 +11808,9 @@ const UnitsData = {
     ]
   },
   "Gundam F90 M": {
+    "note": [
+      [ "Hardpoint System: ##...##", "Gundam F90", "Gundam F90 A", "Gundam F90 S" ]
+    ],
     "code": [
       "07-5675815"
     ]
@@ -11765,16 +11826,25 @@ const UnitsData = {
     ]
   },
   "Gundam F90 S": {
+    "note": [
+      [ "Hardpoint System: ##...##", "Gundam F90", "Gundam F90 A", "Gundam F90 M" ]
+    ],
     "code": [
       "07-8080917"
     ]
   },
   "Burugengu (Leader type)": {
+    "note": [
+      [ "Assing ##1## at the leader", "Burugengu" ]
+    ],
     "code": [
       "07-8461455"
     ]
   },
   "Gundam F90 A": {
+    "note": [
+      [ "Hardpoint System: ##...##", "Gundam F90", "Gundam F90 M", "Gundam F90 S" ]
+    ],
     "code": [
       "07-9130842"
     ]
@@ -11795,16 +11865,17 @@ const UnitsData = {
     ]
   },
   "Gundam F90 II L": {
+    "note": [
+      [ "Hardpoint System: ##...##", "Gundam F90 II", "Gundam F90 II I" ]
+    ],
     "code": [
       "08-3947740"
     ]
   },
-  "Halo": {
-    "code": [
-      "08-4178728"
-    ]
-  },
   "Gundam F90 II I": {
+    "note": [
+      [ "Hardpoint System: ##...##", "Gundam F90 II", "Gundam F90 II L" ]
+    ],
     "code": [
       "08-4697333"
     ]
@@ -11815,6 +11886,9 @@ const UnitsData = {
     ]
   },
   "RF Gelgog (Leader type)": {
+    "note": [
+      [ "Assign ##1## at the leader", "RF Gelgog" ]
+    ],
     "code": [
       "08-7442481"
     ]
@@ -11835,13 +11909,11 @@ const UnitsData = {
     ]
   },
   "Phoenix Gundam": {
+    "note": [
+      [ "Display the code after finishing all stages" ]
+    ],
     "code": [
       "10-2163744"
-    ]
-  },
-  "Psyco Halo": {
-    "code": [
-      "10-6131565"
     ]
   }
 };

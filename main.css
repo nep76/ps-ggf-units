@@ -214,19 +214,12 @@ ul li {
     font-weight: bold;
 }
 
-#design li a {
+#design li a, #design li:not(:has(a)) {
     display: block;
-    padding: 8px 14px;
+    padding: 9px 12px;
     border: 1px solid #d5d9df;
     border-radius: 5px;
-    background: #fafafa;
-}
-
-#design li:first-child a {
-    text-align: center;
-}
-
-#design li:last-child a {
+    background-color: #fafafa;
     text-align: center;
 }
 
@@ -234,16 +227,6 @@ ul li {
     background: #f4f7fc;
     border-color: #b9c9e5;
     text-decoration: none;
-}
-
-/* 設計のリンク */
-
-#design a {
-    display: block;
-    padding: 9px 12px;
-    border: 1px solid #e0e3e7;
-    border-radius: 5px;
-    background: #fafafa;
 }
 
 /* 関連ユニット */

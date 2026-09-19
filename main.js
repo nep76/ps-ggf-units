@@ -33,12 +33,18 @@ function contains( data, target )
 
 function _a( key )
 {
-    const a = document.createElement( "a" );
-    a.textContent = _t(key);
-    a.href = "#" + encodeURIComponent( key );
-    a.addEventListener( "click", ( e ) => { ResetScrollPosition = true; } );
+    const data = key.charAt( 0 ) === '[' ? Categories : UnitsData;
+    const _tkey = _t( key );
 
-    return a;
+    if( Object.hasOwn( data, key ) ){
+        const a = document.createElement( "a" );
+        a.textContent = _tkey;
+        a.href = "#" + encodeURIComponent( _tkey );
+        a.addEventListener( "click", ( e ) => { ResetScrollPosition = true; } );
+
+        return a;
+    }
+    return document.createTextNode( _tkey );
 }
 
 function _t( str )
@@ -87,7 +93,7 @@ function search_unit( str )
     for( const item of units ){
         if( item == match ) continue;
         ResultTree["match"].appendChild( ( e = document.createElement( "li" ) ) );
-        e.appendChild( _a( _t(item) ) );
+        e.appendChild( _a( item ) );
     }
 
     ResultTree["unitname"].textContent = _t(unit.name);
@@ -102,11 +108,11 @@ function search_unit( str )
                     const mls = document.createElement( "ul" )
                     for( const _m of material ){
                         mls.appendChild( document.createElement( "li" ) );
-                        mls.lastChild.appendChild( _a( _t(_m) ) );
+                        mls.lastChild.appendChild( _a( _m ) );
                     }
                     e.lastChild.appendChild( mls );
                 } else{
-                    e.lastChild.appendChild( _a( _t(material) ) );
+                    e.lastChild.appendChild( _a( material ) );
                 }
             }
         }
@@ -119,7 +125,7 @@ function search_unit( str )
     if( Object.hasOwn( unit.data, "development" ) && unit.data.development.length ){
         for( const development of unit.data.development ){
             ResultTree["dev-to"].appendChild( ( e = document.createElement( "li" ) ) );
-            e.appendChild( _a( _t(development) ) );
+            e.appendChild( _a( development ) );
         }
     } else{
         ResultTree["dev-to"].appendChild( ( e = document.createElement( "li" ) ) );
@@ -140,7 +146,7 @@ function search_unit( str )
         if( dev_from.length ){
             for( const src_unit of dev_from ){
                 ResultTree["dev-from"].appendChild( ( e = document.createElement( "li" ) ) );
-                e.appendChild( _a( _t(src_unit) ) );
+                e.appendChild( _a( src_unit ) );
             }
         } else{
             ResultTree["dev-from"].appendChild( ( e = document.createElement( "li" ) ) );
@@ -162,16 +168,24 @@ function search_unit( str )
     ResultTree["note"].replaceChildren();
     if( Object.hasOwn( unit.data, "note" ) && unit.data.note.length ){
         const re = /##(.*?)##/g;
-        let pos, anchor;
+        let pos, anchor, _tnote;
         for( const note of unit.data.note ){
+            _tnote = _t(note[0]);
             ResultTree["note"].appendChild( ( e = document.createElement( "li" ) ) );
             pos = 0;
-            while( ( anchor = re.exec( note ) )  !== null ){
-                e.append( note.slice( pos, anchor.index ) );
-                e.append( _a( _t(anchor[1]) ) );
+            while( ( anchor = re.exec( _tnote ) )  !== null ){
+                e.append( _tnote.slice( pos, anchor.index ) );
+                if( anchor[1] == "..." ){
+                    for( let i = 1; i < note.length; i++ ){
+                        e.append( _a( note[i] ) );
+                        e.append( document.createTextNode( " " ) );
+                    }
+                } else{
+                    e.append( _a( note[ Number( anchor[1] ) ] ) );
+                }
                 pos = re.lastIndex;
             }
-            e.append( note.slice( pos ) );
+            e.append( _tnote.slice( pos ) );
         }
     } else{
         ResultTree["note"].appendChild( ( e = document.createElement( "li" ) ) );
@@ -284,7 +298,8 @@ async function _debug_orphan( data, re )
             ! found &&
             ( ! Object.hasOwn( data[key1], "design" )      || ! data[key1]["design"].length ) &&
             ( ! Object.hasOwn( data[key1], "development" ) || ! data[key1]["development"].length ) &&
-            ( ! Object.hasOwn( data[key1], "stage" )       || ! Object.keys( data[key1]["stage"] ).length )
+            ( ! Object.hasOwn( data[key1], "stage" )       || ! Object.keys( data[key1]["stage"] ).length ) &&
+            ( ! Object.hasOwn( data[key1], "note" )        || ! data[key1]["note"].length )
         ){
             re.appendChild( ( e = document.createElement( "li" ) ) );
             e.textContent = "O: " + key1;
@@ -330,14 +345,14 @@ function ev_loadhash( e )
                 label = "全ユニット一覧";
                 for( const key of Object.keys( UnitsData ).sort( ( a, b ) => _t( a ).localeCompare( _t( b ), "ja" ) ) ){
                     ResultTree["match"].appendChild( ( e = document.createElement( "li" ) ) );
-                    e.appendChild( _a( _t(key) ) );
+                    e.appendChild( _a( key ) );
                 }
                 break;
             case "_CATEGORIES":
                 label = "カテゴリ一覧";
                 for( const key of Object.keys( Categories ).sort( ( a, b ) => _t( a ).localeCompare( _t( b ), "ja" ) ) ){
                     ResultTree["match"].appendChild( ( e = document.createElement( "li" ) ) );
-                    e.appendChild( _a( _t(key) ) );
+                    e.appendChild( _a( key ) );
                 }
                 break;
             case "_DEBUG":
@@ -353,7 +368,7 @@ function ev_loadhash( e )
                 if( cat ){
                     for( const key of Categories[cat].sort( ( a, b ) => _t( a ).localeCompare( _t( b ), "ja" ) ) ){
                         ResultTree["match"].appendChild( ( e = document.createElement( "li" ) ) );
-                        e.appendChild( _a( _t(key) ) );
+                        e.appendChild( _a( key ) );
                     }
                 } else{
                     ResultTree["match"].appendChild( ( e = document.createElement( "li" ) ) );
