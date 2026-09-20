@@ -10922,7 +10922,10 @@ const UnitsData = {
   },
   "Shuffle Club": {
     "development": [
-      "Dragon Gundam"
+      "Dragon Gundam",
+      "Shuffle Joker",
+      "Shuffle Spade",
+      "Shuffle Dia"
     ],
     "code": [
       "07-5411507",
@@ -10931,7 +10934,10 @@ const UnitsData = {
   },
   "Shuffle Joker": {
     "development": [
-      "Bolt Gundam"
+      "Bolt Gundam",
+      "Shuffle Club",
+      "Shuffle Joker",
+      "Shuffle Spade"
     ],
     "code": [
       "07-6195514"
@@ -10939,7 +10945,10 @@ const UnitsData = {
   },
   "Shuffle Spade": {
     "development": [
-      "Gundam Rose"
+      "Gundam Maxter",
+      "Shuffle Club",
+      "Shuffle Joker",
+      "Shuffle Dia"
     ],
     "code": [
       "07-0690221",
@@ -10948,7 +10957,10 @@ const UnitsData = {
   },
   "Shuffle Dia": {
     "development": [
-      "Gundam Maxter"
+      "Gundam Rose",
+      "Shuffle Club",
+      "Shuffle Joker",
+      "Shuffle Spade"
     ],
     "code": [
       "07-0697823",
