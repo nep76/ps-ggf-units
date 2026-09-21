@@ -7797,7 +7797,7 @@ const UnitsData = {
         [
           "High Mobility Operation Unit",
           "Leo (Land use)",
-          "Leo (Space use)"
+          "Leo (Space use)",
           "EWAC Leo",
           "High Mobility Leo"
         ]
