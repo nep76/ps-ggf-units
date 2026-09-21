@@ -5715,7 +5715,7 @@ const UnitsData = {
     ],
     "development": [
       "High Mobility Leo",
-      "Torogas",
+      "Toragos",
       "Leo (Space use)"
     ],
     "stage": {
@@ -10805,7 +10805,7 @@ const UnitsData = {
   "Rig Shacko": {
     "development": [
       "Jabako",
-      "Rig Shacko (Anather use)"
+      "Rig Shacko (Another use)"
     ],
     "stage": {
       "Mobile Suit V Gundam": [
