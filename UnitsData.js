@@ -2173,10 +2173,8 @@ const UnitsData = {
     "design": [
       [
         [
-          [
-            "Leo (Land use)",
-            "Leo (Space use)"
-          ],
+          "Leo (Land use)",
+          "Leo (Space use)",
           "High Mobility Leo"
         ],
         "[Observer type]"
@@ -7798,10 +7796,8 @@ const UnitsData = {
         "Phoenix Gundam",
         [
           "High Mobility Operation Unit",
-          [
-            "Leo (Land use)",
-            "Leo (Space use)"
-          ],
+          "Leo (Land use)",
+          "Leo (Space use)"
           "EWAC Leo",
           "High Mobility Leo"
         ]
