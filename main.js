@@ -73,7 +73,7 @@ function search_unit( str )
 
     if( ! match ){
         if( ! units.length ) return false;
-        
+
         units.sort( ( a, b ) => _t( a ).localeCompare( _t( b ), "ja" ) );
         match = units[0];
     }
@@ -323,7 +323,7 @@ function ev_loadhash( e )
   - HIνガンダム → HIニューガンダム
   - α・アジール → アルパ・アジール
   - Ξガンダム   → クスィーガンダム
-  - ∀ガンダム   → ターンエーガンダム
+  - ∀ガンダム   → ターンAガンダム
 
 など...</pre>`;
         return;
