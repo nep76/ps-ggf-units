@@ -7,15 +7,8 @@ function is_match( a, b, fizzy )
     let _ta = normalize( _t(a) );
     let _b = normalize( b );
 
-    if( fizzy ){
-        const re = /\s*\(.*\)$/;
-        _a  = _a.replace( re, "" );
-        _ta = _ta.replace( re, "" );
-        _b  = _b.replace( re, "" );
-        return ( _a.includes( _b ) || _ta.includes( _b ) );
-    } else{
-        return ( _a == _b || _ta == _b );
-    }
+    return fizzy ? ( _a.includes( _b ) || _ta.includes( _b ) ) : ( _a == _b || _ta == _b );
+
 }
 
 function contains( data, target )
@@ -60,27 +53,28 @@ function normalize( str )
 function search_unit( str )
 {
     const name = str;
-    let match = null;
+    let match = null, find = false;
 
     if( ! str ) return;
 
     const units = Object.keys( UnitsData ).filter( key => {
-        if( is_match( key, name, false ) ) match = key;
+        if( ! find ){
+            if( is_match( key, name, false ) ){
+                match = key;
+                find = true;
+            } else if( is_match( key, name, true ) ){
+                match = key
+            }
+        }
         return is_match( key, name, true ) || contains( UnitsData[key], name );
     } );
 
     let e;
 
-    /*if ( match === null ) {
-        const e = document.createElement( "p" );
-        e.textContent = "見つかりませんでした。";
-        result.appendChild( e );
-    }*/
-
-    units.sort( ( a, b ) => _t( a ).localeCompare( _t( b ), "ja" ) );
-
     if( ! match ){
         if( ! units.length ) return false;
+        
+        units.sort( ( a, b ) => _t( a ).localeCompare( _t( b ), "ja" ) );
         match = units[0];
     }
 
@@ -383,23 +377,23 @@ function ev_loadhash( e )
         ResultTree["root-search"].replaceChildren();
         document.getElementById("ggf-unit-db-search-name").value = hash;
 
-        search_unit( hash, result );
-
-        ResultTree["root-search"].appendChild( ResultTree["unitname"] );
-        add_heading( ResultTree["root-search"], "設計" );
-        ResultTree["root-search"].appendChild( ResultTree["design"] );
-        add_heading( ResultTree["root-search"], "開発元" );
-        ResultTree["root-search"].appendChild( ResultTree["dev-from"] );
-        add_heading( ResultTree["root-search"], "開発" );
-        ResultTree["root-search"].appendChild( ResultTree["dev-to"] );
-        add_heading( ResultTree["root-search"], "ACE登録/捕獲 ステージ例" );
-        ResultTree["root-search"].appendChild( ResultTree["stage"] );
-        add_heading( ResultTree["root-search"], "備考" );
-        ResultTree["root-search"].appendChild( ResultTree["note"] );
-        add_heading( ResultTree["root-search"], "黒歴史コード" );
-        ResultTree["root-search"].appendChild( ResultTree["code"] );
-        ResultTree["root-search"].appendChild( ResultTree["match"] );
-        result.appendChild( ResultTree["root-search"] );
+        if( search_unit( hash, result ) ){
+            ResultTree["root-search"].appendChild( ResultTree["unitname"] );
+            add_heading( ResultTree["root-search"], "設計" );
+            ResultTree["root-search"].appendChild( ResultTree["design"] );
+            add_heading( ResultTree["root-search"], "開発元" );
+            ResultTree["root-search"].appendChild( ResultTree["dev-from"] );
+            add_heading( ResultTree["root-search"], "開発" );
+            ResultTree["root-search"].appendChild( ResultTree["dev-to"] );
+            add_heading( ResultTree["root-search"], "ACE登録/捕獲 ステージ例" );
+            ResultTree["root-search"].appendChild( ResultTree["stage"] );
+            add_heading( ResultTree["root-search"], "備考" );
+            ResultTree["root-search"].appendChild( ResultTree["note"] );
+            add_heading( ResultTree["root-search"], "黒歴史コード" );
+            ResultTree["root-search"].appendChild( ResultTree["code"] );
+            ResultTree["root-search"].appendChild( ResultTree["match"] );
+            result.appendChild( ResultTree["root-search"] );
+        }
     }
 }
 

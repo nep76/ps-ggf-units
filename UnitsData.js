@@ -10548,7 +10548,7 @@ const UnitsData = {
   },
   "Jegan A type": {
     "note": [
-      [ "Assign ##1## at the leader", "Jegan B type" ]
+      [ "Assign ##1## as the leader", "Jegan B type" ]
     ],
     "code": [
       "04-3694696"
@@ -11287,7 +11287,7 @@ const UnitsData = {
   },
   "Seiba Fish (Leader type)": {
     "note": [
-      [ "Assign ##1## at the leader", "Seiba Fish" ]
+      [ "Assign ##1## as the leader", "Seiba Fish" ]
     ],
     "code": [
       "01-4172603"
@@ -11295,7 +11295,7 @@ const UnitsData = {
   },
   "Zaku II F (Leader type)": {
     "note": [
-      [ "Assign ##1## at the leader", "Zaku II F" ]
+      [ "Assign ##1## as the leader", "Zaku II F" ]
     ],
     "code": [
       "01-4909401"
@@ -11492,7 +11492,7 @@ const UnitsData = {
   },
   "Zaku Marina (Leader type)": {
     "note": [
-      [ "Assign ##1## at the leader", "Zaku Marina" ]
+      [ "Assign ##1## as the leader", "Zaku Marina" ]
     ],
     "code": [
       "02-9604062"
@@ -11500,7 +11500,7 @@ const UnitsData = {
   },
   "High Mobility Gelgog (Leader type)": {
     "note": [
-      [ "Assign ##1## at the leader", "High Mobility Gelgog" ]
+      [ "Assign ##1## as the leader", "High Mobility Gelgog" ]
     ],
     "code": [
       "03-0057203"
@@ -11608,7 +11608,7 @@ const UnitsData = {
   },
   "RF Zaku (Leader type)": {
     "note": [
-      [ "Assign ##1## at the leader", "RF Zaku" ]
+      [ "Assign ##1## as the leader", "RF Zaku" ]
     ],
     "code": [
       "04-2164258"
@@ -11616,7 +11616,7 @@ const UnitsData = {
   },
   "Gira Doga (Leader type)": {
     "note": [
-      [ "Assign ##1## at the leader", "Gira Doga" ]
+      [ "Assign ##1## as the leader", "Gira Doga" ]
     ],
     "code": [
       "04-2422211"
@@ -11743,7 +11743,7 @@ const UnitsData = {
   },
   "V Gundam Hexa": {
     "note": [
-      [ "Assign ##1## at the leader", "V Gundam" ]
+      [ "Assign ##1## as the leader", "V Gundam" ]
     ],
     "_ref": [
       "V Gundam Hexa (MS)",
@@ -11843,7 +11843,7 @@ const UnitsData = {
   },
   "Burugengu (Leader type)": {
     "note": [
-      [ "Assing ##1## at the leader", "Burugengu" ]
+      [ "Assing ##1## as the leader", "Burugengu" ]
     ],
     "code": [
       "07-8461455"
@@ -11895,7 +11895,7 @@ const UnitsData = {
   },
   "RF Gelgog (Leader type)": {
     "note": [
-      [ "Assign ##1## at the leader", "RF Gelgog" ]
+      [ "Assign ##1## as the leader", "RF Gelgog" ]
     ],
     "code": [
       "08-7442481"
