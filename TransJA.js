@@ -1,8 +1,11 @@
 const TransJA = {
 	"Default factory list": "初期生産リスト",
-	"Display the code after finishing all stages": "ゲームクリア時に黒歴史コードを入手",
+	"Display the code afterfinishing all stages": "ゲームクリア時に黒歴史コードを入手",
 	"Starting Unit (No savedata convert)": "初期ユニット（セーブデータ未コンバート時のみ）",
 	"Assign ##1## as the leader": "##1##をリーダーに配置",
+	"RF = Refined": "RF = リファイン",
+	"DHM = Daughtress High Mobility": "DHM = ドートレス・ハイモビリティ",
+	"DHMC = Daughtress High Mobility Command": "DHMC = ドートレス・ハイモビリティコマンド",
 
 	"Mobile Suit Gundam": "機動戦士ガンダム",
 	"Mobile Suit Gundam The 08th MS Team": "機動戦士ガンダム 第08MS小隊",
@@ -686,7 +689,7 @@ const TransJA = {
 	"Bagi Doga": "バギ・ドーガ",
 	"Bazam": "バーザム",
 	"Bajimu": "バージム",
-	"Batara": "バダラ",
+	"Batara": "バタラ",
 	"Hardygun": "ハーディガン",
 	"Patouria": "パトゥーリア",
 	"Batorabensunmamu": "バトラーベンスンマム",

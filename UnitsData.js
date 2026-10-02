@@ -82,7 +82,10 @@ const UnitsData = {
         ]
       ]
     ],
-    "development": [],
+    "development": [
+      "Guabaze",
+      "Totoga"
+    ],
     "code": [
       "05-5913551"
     ]
@@ -1277,7 +1280,9 @@ const UnitsData = {
       ]
     ],
     "development": [
-      "Crossbone Gundam X1 Kai"
+      "Crossbone Gundam X1 Kai",
+      "Crossbone Gundam X2",
+      "Flint"
     ],
     "code": [
       "08-6205508",
@@ -1296,7 +1301,9 @@ const UnitsData = {
       ]
     ],
     "development": [
-      "Crossbone Gundam X2 Kai"
+      "Crossbone Gundam X1",
+      "Crossbone Gundam X2 Kai",
+      "Flint"
     ],
     "code": [
       "08-0842603",
@@ -1310,7 +1317,11 @@ const UnitsData = {
         "Gyan Kai"
       ]
     ],
-    "development": [],
+    "development": [
+      "Crossbone Gundam X1",
+      "Crossbone Gundam X2",
+      "Flint"
+    ],
     "code": [
       "08-0564891"
     ]
@@ -3731,6 +3742,8 @@ const UnitsData = {
       ]
     ],
     "development": [
+      "Abijo",
+      "Totoga",
       "Mass Product Guabaze"
     ],
     "code": [
@@ -5765,7 +5778,11 @@ const UnitsData = {
         ]
       ]
     ],
-    "development": [],
+    "development": [
+      "Leo (Space use)",
+      "Leosu",
+      "Leoru"
+    ],
     "code": [
       "05-1233565"
     ]
@@ -5809,7 +5826,11 @@ const UnitsData = {
         ]
       ]
     ],
-    "development": [],
+    "development": [
+      "Leo (Space use)",
+      "Leosu",
+      "Leon"
+    ],
     "code": [
       "04-6432588"
     ]
@@ -7181,6 +7202,9 @@ const UnitsData = {
     "development": [
       "Azam"
     ],
+    "note": [
+      [ "RF = Refined" ]
+    ],
     "code": [
       "09-8858662"
     ]
@@ -7197,6 +7221,9 @@ const UnitsData = {
       "Dom",
       "Rick Dom"
     ],
+    "note": [
+      [ "RF = Refined" ]
+    ],
     "code": [
       "06-5623134"
     ]
@@ -7211,6 +7238,9 @@ const UnitsData = {
     "development": [
       "Gelgog"
     ],
+    "note": [
+      [ "RF = Refined" ]
+    ],
     "code": [
       "07-6101921"
     ]
@@ -7224,6 +7254,9 @@ const UnitsData = {
     ],
     "development": [
       "Gouf"
+    ],
+    "note": [
+      [ "RF = Refined" ]
     ],
     "code": [
       "05-3207032"
@@ -7247,6 +7280,9 @@ const UnitsData = {
     "development": [
       "Gyan"
     ],
+    "note": [
+      [ "RF = Refined" ]
+    ],
     "code": [
       "07-2744180"
     ]
@@ -7268,6 +7304,9 @@ const UnitsData = {
         "3"
       ]
     },
+    "note": [
+      [ "RF = Refined" ]
+    ],
     "code": [
       "03-7889793"
     ]
@@ -7281,6 +7320,9 @@ const UnitsData = {
           "Zugok E"
         ]
       ]
+    ],
+    "note": [
+      [ "RF = Refined" ]
     ],
     "code": [
       "05-5323045"
@@ -9961,6 +10003,9 @@ const UnitsData = {
     "development": [
       "Dowaji"
     ],
+    "note": [
+      [ "RF = Refined" ]
+    ],
     "code": [
       "06-6745234"
     ]
@@ -10764,7 +10809,11 @@ const UnitsData = {
     ]
   },
   "Crossbone Gundam X1 Kai": {
-    "development": [],
+    "development": [
+      "Crossbone Gundam X2",
+      "Crossbone Gundam X3",
+      "Flint"
+    ],
     "code": [
       "08-0886605",
       "08-8834681"
@@ -10772,7 +10821,9 @@ const UnitsData = {
   },
   "Crossbone Gundam X2 Kai": {
     "development": [
-      "Crossbone Gundam X3"
+      "Crossbone Gundam X1",
+      "Crossbone Gundam X3",
+      "Flint"
     ],
     "code": [
       "08-0612372"
@@ -11115,6 +11166,9 @@ const UnitsData = {
         "3"
       ]
     },
+    "note": [
+      [ "DHM = Daughtress High Mobility" ]
+    ],
     "code": [
       "02-2647781"
     ]
@@ -11548,7 +11602,8 @@ const UnitsData = {
   },
   "DHMC Waizuwarabi": {
     "note": [
-      [ "Assign ##1## as the leader", "DHM Faiawarabi" ]
+      [ "Assign ##1## as the leader", "DHM Faiawarabi" ],
+      [ "DHMC = Daughtress High Mobility Command" ]
     ],
     "code": [
       "03-9726551"
@@ -11609,6 +11664,9 @@ const UnitsData = {
   "RF Zaku (Leader type)": {
     "note": [
       [ "Assign ##1## as the leader", "RF Zaku" ]
+    ],
+    "note": [
+      [ "RF = Refined" ]
     ],
     "code": [
       "04-2164258"
@@ -11896,6 +11954,9 @@ const UnitsData = {
   "RF Gelgog (Leader type)": {
     "note": [
       [ "Assign ##1## as the leader", "RF Gelgog" ]
+    ],
+    "note": [
+      [ "RF = Refined" ]
     ],
     "code": [
       "08-7442481"

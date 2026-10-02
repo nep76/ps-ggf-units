@@ -304,6 +304,7 @@ async function _debug_orphan( data, re )
 
 function ev_loadhash( e )
 {
+    const input  = document.getElementById( "ggf-unit-db-search-name" );
     const result = document.getElementById( "ggf-unit-db-result" );
     const hash   = decodeURIComponent( location.hash.slice( 1 ) );
 
@@ -317,6 +318,7 @@ function ev_loadhash( e )
     result.replaceChildren();
 
     if( ! hash ){
+        input.value = "";
         result.innerHTML = `<pre>直接入力の難しい文字はカタカナに置き換えられています。
 
   - νガンダム   → ニューガンダム
@@ -326,7 +328,6 @@ function ev_loadhash( e )
   - ∀ガンダム   → ターンAガンダム
 
 など...</pre>`;
-        return;
     } else if( hash.charAt( 0 ) === '_' || hash.charAt( 0 ) === '[' ){
         let label;
         let e;
@@ -393,7 +394,11 @@ function ev_loadhash( e )
             ResultTree["root-search"].appendChild( ResultTree["code"] );
             ResultTree["root-search"].appendChild( ResultTree["match"] );
             result.appendChild( ResultTree["root-search"] );
+        } else{
+            result.innerHTML ="<p>&quot;" + hash + "&quot; を含むユニットは見つかりませんでした。</p>";
+            hash = "";
         }
+        input.value = hash;
     }
 }
 
@@ -441,21 +446,35 @@ window.addEventListener("hashchange", ( e ) => {
     ev_loadhash( e );
 } );
 
-document.addEventListener( "DOMContentLoaded", ( e ) => {
+function init_event_handler()
+{
+    const input  = document.getElementById( "ggf-unit-db-search-name" );
     const movetop = document.getElementById("move-top");
     movetop.hidden = true;
 
-    window.addEventListener("scroll", () => {
+    window.addEventListener ("scroll", () => {
         const search = document.getElementById( "ggf-unit-db-search-name" );
         movetop.hidden = search.getBoundingClientRect().bottom >= 0;
     });
 
-    movetop.addEventListener("click", () => {
+    movetop.addEventListener ("click", () => {
         window.scrollTo( {
             top: 0,
             behavior: "instant"
         } );
     });
+
+    input.addEventListener( "focus", () => {
+        input.select();
+    });
+
+    input.addEventListener( "keydown", ( e ) => {
+        if( e.shiftKey && e.key === "Enter" ) input.value = "";
+    });
+}
+
+document.addEventListener( "DOMContentLoaded", ( e ) => {
+    init_event_handler();
 
     for( const key in UnitsData ) resolv_ref( UnitsData[key] );
     ev_loadhash( e );
