@@ -1,6 +1,6 @@
 const TransJA = {
 	"Default factory list": "初期生産リスト",
-	"Display the code afterfinishing all stages": "ゲームクリア時に黒歴史コードを入手",
+	"Display the code after finishing all stages": "ゲームクリア時に黒歴史コードを入手",
 	"Starting Unit (No savedata convert)": "初期ユニット（セーブデータ未コンバート時のみ）",
 	"Assign ##1## as the leader": "##1##をリーダーに配置",
 	"RF = Refined": "RF = リファイン",
