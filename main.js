@@ -337,14 +337,14 @@ function ev_loadhash( e )
 
         switch( hash ){
             case "_UNITS":
-                label = "全ユニット一覧";
+                label = "全ユニット";
                 for( const key of Object.keys( UnitsData ).sort( ( a, b ) => _t( a ).localeCompare( _t( b ), "ja" ) ) ){
                     ResultTree["match"].appendChild( ( e = document.createElement( "li" ) ) );
                     e.appendChild( _a( key ) );
                 }
                 break;
             case "_CATEGORIES":
-                label = "カテゴリ一覧";
+                label = "設計用ユニットグループ";
                 for( const key of Object.keys( Categories ).sort( ( a, b ) => _t( a ).localeCompare( _t( b ), "ja" ) ) ){
                     ResultTree["match"].appendChild( ( e = document.createElement( "li" ) ) );
                     e.appendChild( _a( key ) );

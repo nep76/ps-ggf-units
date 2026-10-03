@@ -6,6 +6,7 @@ const TransJA = {
 	"RF = Refined": "RF = リファイン",
 	"DHM = Daughtress High Mobility": "DHM = ドートレス・ハイモビリティ",
 	"DHMC = Daughtress High Mobility Command": "DHMC = ドートレス・ハイモビリティコマンド",
+	"Hardpoint System: ##...##": "ハードポイント・システム: ##...##",
 
 	"Mobile Suit Gundam": "機動戦士ガンダム",
 	"Mobile Suit Gundam The 08th MS Team": "機動戦士ガンダム 第08MS小隊",
@@ -43,8 +44,6 @@ const TransJA = {
 	"[Zanscare type]": "[ザンスカール系]",
 	"[Zaku type]": "[ザク系]",
 	"[Z Gundam type]": "[Zガンダム系]",
-
-	"Hardpoint System: ##...##": "ハードポイント・システム: ##...##",
 
 	"Amuro (Z)": "アムロ・レイ (Z)",
 	"Char (FG)": "シャア・アズナブル (1st)",
